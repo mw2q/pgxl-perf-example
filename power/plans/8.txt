@@ -1,0 +1,93 @@
+BEGIN;
+BEGIN
+EXPLAIN
+select
+	o_year,
+	sum(case
+		when nation = 'ROMANIA' then volume
+		else 0
+	end) / sum(volume) as mkt_share
+from
+	(
+		select
+			extract(year from o_orderdate) as o_year,
+			l_extendedprice * (1 - l_discount) as volume,
+			n2.n_name as nation
+		from
+			part,
+			supplier,
+			lineitem,
+			orders,
+			customer,
+			nation n1,
+			nation n2,
+			region
+		where
+			p_partkey = l_partkey
+			and s_suppkey = l_suppkey
+			and l_orderkey = o_orderkey
+			and o_custkey = c_custkey
+			and c_nationkey = n1.n_nationkey
+			and n1.n_regionkey = r_regionkey
+			and r_name = 'EUROPE'
+			and s_nationkey = n2.n_nationkey
+			and o_orderdate between date '1995-01-01' and date '1996-12-31'
+			and p_type = 'MEDIUM BRUSHED TIN'
+	) as all_nations
+group by
+	o_year
+order by
+	o_year;
+                                                                                       QUERY PLAN                                                                                        
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Sort  (cost=2119064.32..2119066.17 rows=738 width=38)
+   Sort Key: (date_part('year'::text, (orders.o_orderdate)::timestamp without time zone))
+   ->  HashAggregate  (cost=2119016.25..2119029.17 rows=738 width=38)
+         Group Key: date_part('year'::text, (orders.o_orderdate)::timestamp without time zone)
+         ->  Remote Subquery Scan on all (datanode_1_1,datanode_2_1)  (cost=568790.51..2118563.33 rows=22646 width=38)
+               ->  HashAggregate  (cost=568790.51..2118563.33 rows=738 width=38)
+                     Group Key: date_part('year'::text, (orders.o_orderdate)::timestamp without time zone)
+                     ->  Hash Join  (cost=568790.51..2118563.33 rows=22646 width=38)
+                           Hash Cond: (supplier.s_nationkey = n2.n_nationkey)
+                           ->  Hash Join  (cost=568788.95..2118137.16 rows=22646 width=16)
+                                 Hash Cond: (lineitem.l_suppkey = supplier.s_suppkey)
+                                 ->  Hash Join  (cost=563968.95..2112392.66 rows=22676 width=16)
+                                       Hash Cond: (orders.o_custkey = customer.c_custkey)
+                                       ->  Hash Join  (cost=500142.42..2045269.70 rows=122578 width=20)
+                                             Hash Cond: (lineitem.l_orderkey = orders.o_orderkey)
+                                             ->  Remote Subquery Scan on all (datanode_1_1,datanode_2_1)  (cost=511.70..1522954.94 rows=399897 width=16)
+                                                   Distribute results by H: l_orderkey
+                                                   ->  Nested Loop  (cost=411.70..1514457.10 rows=399897 width=16)
+                                                         ->  Bitmap Heap Scan on part  (cost=411.51..28119.10 rows=13333 width=4)
+                                                               Recheck Cond: ((p_type)::text = 'MEDIUM BRUSHED TIN'::text)
+                                                               ->  Bitmap Index Scan on part_p_type_p_partkey_idx  (cost=0.00..408.18 rows=13333 width=0)
+                                                                     Index Cond: ((p_type)::text = 'MEDIUM BRUSHED TIN'::text)
+                                                         ->  Materialize  (cost=100.19..212.04 rows=32 width=20)
+                                                               ->  Remote Subquery Scan on all (datanode_1_1,datanode_2_1)  (cost=100.19..211.96 rows=32 width=20)
+                                                                     Distribute results by H: l_partkey
+                                                                     ->  Index Scan using lineitem_l_partkey_l_quantity_l_shipmode_idx on lineitem  (cost=0.19..111.16 rows=32 width=20)
+                                                                           Index Cond: (l_partkey = part.p_partkey)
+                                             ->  Hash  (cost=419806.70..419806.70 rows=4597842 width=12)
+                                                   ->  Bitmap Heap Scan on orders  (cost=97564.07..419806.70 rows=4597842 width=12)
+                                                         Recheck Cond: ((o_orderdate >= '1995-01-01'::date) AND (o_orderdate <= '1996-12-31'::date))
+                                                         ->  Bitmap Index Scan on orders_o_orderdate_o_orderkey_idx  (cost=0.00..96414.60 rows=4597842 width=0)
+                                                               Index Cond: ((o_orderdate >= '1995-01-01'::date) AND (o_orderdate <= '1996-12-31'::date))
+                                       ->  Hash  (cost=58904.53..58904.53 rows=300000 width=4)
+                                             ->  Hash Join  (cost=2.53..58904.53 rows=300000 width=4)
+                                                   Hash Cond: (customer.c_nationkey = n1.n_nationkey)
+                                                   ->  Seq Scan on customer  (cost=0.00..50277.00 rows=1500000 width=8)
+                                                   ->  Hash  (cost=2.47..2.47 rows=5 width=4)
+                                                         ->  Hash Join  (cost=1.07..2.47 rows=5 width=4)
+                                                               Hash Cond: (n1.n_regionkey = region.r_regionkey)
+                                                               ->  Seq Scan on nation n1  (cost=0.00..1.25 rows=25 width=8)
+                                                               ->  Hash  (cost=1.06..1.06 rows=1 width=4)
+                                                                     ->  Seq Scan on region  (cost=0.00..1.06 rows=1 width=4)
+                                                                           Filter: (r_name = 'EUROPE'::bpchar)
+                                 ->  Hash  (cost=3179.00..3179.00 rows=100000 width=8)
+                                       ->  Seq Scan on supplier  (cost=0.00..3179.00 rows=100000 width=8)
+                           ->  Hash  (cost=1.25..1.25 rows=25 width=30)
+                                 ->  Seq Scan on nation n2  (cost=0.00..1.25 rows=25 width=30)
+(47 rows)
+
+COMMIT;
+COMMIT

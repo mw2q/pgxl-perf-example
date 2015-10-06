@@ -1,0 +1,378 @@
+Pseudo-terminal will not be allocated because stdin is not a terminal.
+Pseudo-terminal will not be allocated because stdin is not a terminal.
+Pseudo-terminal will not be allocated because stdin is not a terminal.
+Pseudo-terminal will not be allocated because stdin is not a terminal.
+Pseudo-terminal will not be allocated because stdin is not a terminal.
+Pseudo-terminal will not be allocated because stdin is not a terminal.
+Pseudo-terminal will not be allocated because stdin is not a terminal.
+Pseudo-terminal will not be allocated because stdin is not a terminal.
+Pseudo-terminal will not be allocated because stdin is not a terminal.
+Pseudo-terminal will not be allocated because stdin is not a terminal.
+Pseudo-terminal will not be allocated because stdin is not a terminal.
+Pseudo-terminal will not be allocated because stdin is not a terminal.
+Pseudo-terminal will not be allocated because stdin is not a terminal.
+Pseudo-terminal will not be allocated because stdin is not a terminal.
+Pseudo-terminal will not be allocated because stdin is not a terminal.
+Pseudo-terminal will not be allocated because stdin is not a terminal.
+Pseudo-terminal will not be allocated because stdin is not a terminal.
+Pseudo-terminal will not be allocated because stdin is not a terminal.
+Pseudo-terminal will not be allocated because stdin is not a terminal.
+ssh_exchange_identification: Connection closed by remote host
+Pseudo-terminal will not be allocated because stdin is not a terminal.
+Pseudo-terminal will not be allocated because stdin is not a terminal.
+ssh_exchange_identification: Connection closed by remote host
+ssh_exchange_identification: Connection closed by remote host
+ssh_exchange_identification: Connection closed by remote host
+Pseudo-terminal will not be allocated because stdin is not a terminal.
+WARNING: The /tmp/pgxl-perf-example/power/perf/4/perf-pgxl2-q4.Warning: No xauth data; using fake authentication data for X11 forwarding.
+/usr/bin/xauth:  error in locking authority file /home/mark/.Xauthority
+/usr/bin/xauth:  error in locking authority file /home/mark/.Xauthority
+/usr/bin/xauth:  error in locking authority file /home/mark/.Xauthority
+WARNING: The /tmp/pgxl-perf-example/power/perf/13/perf-pgxl-q13.data file's data size field is 0 which is unexpected.
+Was the 'perf record' command properly terminated?
+WARNING: The /tmp/pgxl-perf-example/power/perf/17/perf-pgxl-q17.data file's data size field is 0 which is unexpected.
+Was the 'perf record' command properly terminated?
+WARNING: The /tmp/pgxl-perf-example/power/perf/10/perf-pgxl-q10.data file's data size field is 0 which is unexpected.
+Was the 'perf record' command properly terminated?
+WARNING: The /tmp/pgxl-perf-example/power/perf/1/perf-pgxl-q1.data file's data size field is 0 which is unexpected.
+Was the 'perf record' command properly terminated?
+WARNING: The /tmp/pgxl-perf-example/power/perf/12/perf-pgxl-q12.data file's data size field is 0 which is unexpected.
+Was the 'perf record' command properly terminated?
+WARNING: The /tmp/pgxl-perf-example/power/perf/8/perf-pgxl-q8.data file's data size field is 0 which is unexpected.
+Was the 'WARNING: The /tmp/pgxl-perf-example/power/perf/6/perf-pgxl1-q6.data file's data size field is 0 which is unexpected.
+Was the 'perf record' command properly terminated?
+WARNING: The /tmp/pgxl-perf-example/power/perf/19/perf-pgxl1-q19.data file's data size field is 0 which is unexpected.
+Was the 'perf record' command properly terminated?
+WARNING: The /tmp/pgxl-perf-example/power/perf/13/perf-pgxl1-q13.data file's data size field is 0 which is unexpected.
+Was the 'perf record' command properly terminated?
+WARNING: The /tmp/pgxl-perf-example/power/perf/9/perf-pgxl1-q9.data file's data size field is 0 which is unexpected.
+Was the 'perf record' command properly terminated?
+WARNING: The /tmp/pgxl-perf-example/power/perf/10/perf-pgxl1-q10.data file's data size field is 0 which is unexpected.
+Was the 'perf record' command properly terminated?
+WARNING: The /tmp/pgxl-perf-example/power/perf/15/perf-pgxl1-q15.data file's data size field is 0 which is unexpected.
+Was the 'perf record' command properly terminated?
+WARNING: The /tmp/pgxl-perf-example/power/perf/2/perf-pgxl1-q2.data file's data size field is 0 which is unexpected.
+Was the 'perf record' command properly terminated?
+WARNING: The /tmp/pgxl-perf-example/power/perf/7/perf-pgxl1-q7.data file's data size field is 0 which is unexpected.
+Was the 'perf record' command properly terminated?
+WARNING: The /tmp/pgxl-perf-example/power/perf/8/perf-pgxl1-q8.data file's data size field is 0 which is unexpected.
+Was the 'perf record' command properly terminated?
+WARNING: The /tmp/pgxl-perf-example/power/perf/11/perf-pgxl1-q11.data file's data size field is 0 which is unexpected.
+Was the 'perf record' command properly terminated?
+WARNING: The /tmp/pgxl-perf-example/power/perf/1/perf-pgxl1-q1.data file's data size field is 0 which is unexpected.
+Was the 'perf record' command properly terminated?
+WARNING: The /tmp/pgxl-perf-exampleWARNING: The /tmp/pgxl-perf-example/power/perf/1/perf-pgxl-q1.data file's data size field is 0 which is unexpected.
+Was the 'perf record' command properly terminated?
+WARNING: The /tmp/pgxl-perf-example/power/perf/10/perf-pgxl-q10.data file's data size field is 0 which is unexpected.
+Was the 'perf record' command properly terminated?
+WARNING: The /tmp/pgxl-perf-example/power/perf/12/perf-pgxl-q12.data file's data size field is 0 which is unexpected.
+Was the 'perf record' command properly terminated?
+WARNING: The /tmp/pgxl-perf-example/power/perf/13/perf-pgxl-q13.data file's data size field is 0 which is unexpected.
+Was the 'perf record' command properly terminated?
+WARNING: The /tmp/pgxl-perf-example/power/perf/8/perf-pgxl-q8.data file's data size field is 0 which is unexpected.
+Was the 'perf record' command properly terminated?
+WARNING: The /tmp/pgxl-perf-example/power/perf/14/perf-pgxl-q14.data file's data size field is 0 which is unexpected.
+Was the 'perf rWARNINGWARNING: The /tmp/pgxl-perf-example/power/perf/15/perf-pgxl1-q15.data file's data size field is 0 which is unexpected.
+Was the 'perf record' command properly termiWARNING: The /tmp/pgxl-perf-example/power/perf/15/perf-pgxl2-q15.data file's data size field is 0 which is unexpected.
+Was the 'perf record' command properly terminated?
+WARNINGWARNING: The /tmp/pgxl-perf-example/power/perf/19/perf-pgxl1-q19.data file's data size field is 0 which is unexpected.
+Was the 'perf record' command properly terminated?
+WARNING: The /tmp/pgxl-perf-example/power/perf/2/perf-pgxl1-q2.data file's data size field is 0 which is unexpected.
+Was the 'perf record' command properly terminated?
+WARNING: The /tmp/pgxl-perf-example/power/perf/11/perf-pgxl1-q11.data file's data size field is 0 which is unexpected.
+Was the 'perf record' command properly terminated?
+WARNING: The /tmp/pgxl-perf-example/power/perf/13/perf-pgxl1-q13.data file's data size field is 0 which is unexpected.
+Was the 'perf record' command properly terminated?
+WARNING: The /tmp/pgxl-perf-example/power/perf/9/perf-pgxl1-q9.data file's data size field is 0 which is unexpected.
+Was the 'perf record' command properly terWARNING: WARNING: The /tmp/pgxl-perf-example/power/perf/6/perf-pgxl1-q6.data file's data size field is 0 which is unexpected.
+Was the 'perf record' command properly terminated?
+WARNING: The /tmp/pgxl-perf-example/power/perf/8/perf-pgxl1-q8.data file's data size field is 0 which is unexpected.
+Was the 'perf record' command properly terminated?
+WARNING: The /tmp/pgxl-perf-example/power/perf/7/perf-pgxl1-q7.data file's data size field is 0 which is unexpected.
+Was the 'perf record' command properly termiWARNINGCan't annotate native_write_msr_safe:
+
+No vmlinux file
+was found in the path.
+
+Please use:
+
+  perf buildid-cache -vu vmlinux
+
+or:
+
+  --vmlinux vmlinux
+WARNING: The /tmp/pgxl-perf-example/powCan't annotate native_write_msr_safe:
+
+No vmlinux file
+was found in the path.
+
+Please use:
+
+  perf buildid-cache -vu vmlinux
+
+or:
+
+  --vmlinux vmlinux
+WARNING: The /tmp/pgxl-perf-example/power/perf/1/perf-pgxl-q1.data file's data size field is 0 which is unexpected.
+Was the 'perf record' command properly terminated?
+Can't annotate native_write_msr_safe:
+
+No vmlinux file
+was found in the path.
+
+Please use:
+
+  perf buildid-cache -vu vmlinux
+
+or:
+
+  --vmlinux vmlinux
+Can't annotate native_write_msr_safe:
+
+No vmlinux file
+was found in the path.
+
+Please use:
+
+  perf buildid-cache -vu vmlinux
+
+or:
+
+  --vmlinux vmlinux
+Can't annotate native_write_msr_safe:
+
+No vmlinux file
+was found in the path.
+
+Please use:
+
+  perf buildid-cache -vu vmlinux
+
+or:
+
+  --vmlinux vmlinux
+WARNING: The /tmp/pgxl-perf-example/power/perf/10/perf-pgxl-q10.data file's data size field is 0 which is unexpected.
+Was the 'perf record' command properly terminated?
+Can't annotate native_write_msr_safe:
+
+No vmlinux file
+was found in the path.
+
+Please use:
+
+  perf buildid-cache -vu vmlinux
+
+or:
+
+  --vmlinux vmlinux
+Can't annotate native_write_msr_safe:
+
+No vmlinux file
+was found in the path.
+
+Please use:
+
+  perf buildid-cache -vu vmlinux
+
+or:
+
+  --vmlinux vmlinux
+Can't annWARNING: The /tmp/pgxl-perf-example/power/perf/21/perf-pgxl2-q21.data file's data size field is 0 which is unexpected.
+Was the 'perf record' command properly terminated?
+Can't annotate native_write_msr_safe:
+
+No vmlinux file
+was found in the path.
+
+Please use:
+
+  perf buildid-cache -vu vmlinux
+
+or:
+
+  --vmlinux vmlinux
+WARNING: The /tmp/pgxl-perf-example/power/perf/5/perf-pgxl2-q5.data file's data size field is 0 which is unexpected.
+Was the 'perf record' command properly terminated?
+Can't annotate native_write_msr_safe:
+
+No vmlinux file
+was found in the path.
+
+Please use:
+
+  perf buildid-cache -vu vmlinux
+
+or:
+
+  --vmlinux vmlinux
+WARNING: The /tmp/pgxl-perf-example/power/perf/20/perf-pgxl2-q20.data file's data size field is 0 which is unexpected.
+Was the 'perf record' command properly terminated?
+Can't annotate native_write_msr_safe:
+
+No vmlinux file
+was found in the path.
+
+Please use:
+
+  perf buildid-cache -vu vmlinux
+
+or:
+
+  --vmlinux vmlinux
+Can't annotate native_write_msr_safe:
+
+No vmlinux file
+was found in the path.
+
+Please use:
+
+  perf buildid-cache -vu vmlinux
+
+or:
+
+  --vmlinux vmlinux
+WARNING: The /tmp/pgxl-perf-example/power/perf/18/perf-pgxl2-q18.data file's data size field is 0 which is unexpected.
+Was the 'perf record' command properly termCan't anWARNING: The /tmp/pgxl-perf-example/power/perf/15/perf-pgxl2-q15.data file's data size field is 0 which is unexpected.
+Was the 'perf record' command properly terminated?
+Can't annotate native_write_msr_safe:
+
+No vmlinux file
+was found in the path.
+
+Please use:
+
+  perf buildid-cache -vu vmlinux
+
+or:
+
+  --vmlinux vmlinux
+Can't annotate native_write_msr_safe:
+
+No vmlinux file
+was found in the path.
+
+Please use:
+
+  perf buildid-cache -vu vmlinux
+
+or:
+
+  --vmlinux vmlinux
+WARNING: The /tmp/pgxl-perf-example/power/perf/17/perf-pgxl2-q17.data file's data size field is 0 which is unexpected.
+Was the 'perf record' command properly terminated?
+Can't annotate native_write_msr_safe:
+
+No vmlinux file
+was found in the path.
+
+Please use:
+
+  perf buildid-cache -vu vmlinux
+
+or:
+
+  --vmlinux vmlinux
+Can't annotate native_write_msr_safe:
+
+No vmlinux file
+was found in the path.
+
+Please use:
+
+  perf buildid-cache -vu vmlinux
+
+or:
+
+  --vmlinux vmlinux
+WARNING: The /tmp/pgxl-perf-example/power/perf/1/perf-pgxl2-q1.data file's data size field is 0 which is unexpected.
+Was the 'perf record' command properly terminated?
+WARNING: The /tmp/pgxl-perf-example/power/perf/2/perf-pgxl2-q2.data file's data size field is 0 which is unexpected.
+Was the 'perf record' command properly terminated?
+Can't annotate native_write_msr_safe:
+
+No vmlinux file
+was found in the path.
+
+Please use:
+
+  perf buildid-cache -vu vmlinux
+
+or:
+
+  --vmlinux vmlinux
+WARNING: The /tmp/pgxl-perf-example/power/perf/6/perf-pgxl2-q6.data file's data size field is 0 which is unexpected.
+Was the 'perf record' command properly terminated?
+Can't annotate native_write_msr_safe:
+
+No vmlinux file
+was found in the path.
+
+Please use:
+
+  perf buildid-cache -vu vmlinux
+
+or:
+
+  --vmlinux vmlinux
+WARNING: The /tmp/pgxl-perf-example/power/perf/8/perf-pgxl2-q8.data file's data size field is 0 which is unexpected.
+Was the 'perf record' command properly terminated?
+Can't annotate native_write_msr_safe:
+
+No vmlinux file
+was found in the path.
+
+Please use:
+
+  perf buildid-cache -vu vmlinux
+
+or:
+
+  --vmlinux vmlinux
+Can't annotate native_write_msr_safe:
+
+No vmlinux file
+was found in the path.
+
+Please use:
+
+  perf buildid-cache -vu vmlinux
+
+or:
+
+  --vmlinux vmlinux
+Can't annotate native_write_msr_safe:
+
+No vmlinux file
+was found in the path.
+
+Please use:
+
+  perf buildid-cache -vu vmlinux
+
+or:
+
+  --vmlinux vmlinux
+WARNING: The /tmp/pgxl-perf-example/power/perf/16/perf-pgxl2-q16.data file's data size field is 0 which is unexpected.
+Was the 'perf record' command properly terminated?
+WARNING: The /tmp/pgxl-perf-example/power/perf/13/perf-pgxl2-q13.data file's data size field is 0 which is unexpected.
+Was the 'perf record' command properly terminated?
+Can't annotate native_write_msr_safe:
+
+No vmlinux file
+was found in the path.
+
+Please use:
+
+  perf buildid-cache -vu vmlinux
+
+or:
+
+  --vmlinux vmlinux
+WARNING: The /tmp/pgxl-perf-example/power/perf/3/perf-pgxl2-q3.data file's data size field is 0 which is unexpected.
+Was the 'perf record' command properly terminated?
+WARNING: The /tmp/pgxl-perf-example/power/perf/22/perf-pgxl2-q22.data file's data size field is 0 which is unexpected.
+Was the 'perf record' command properly terminated?
+WARNING: The /tmp/pgxl-perf-example/power/perf/9/perf-pgxl2-q9.data file's data size field is 0 which is unexpected.
+Was the 'perf record' command properly terminated?
+WARNING: The /tmp/pgxl-perf-example/power/perf/14/perf-pgxl2-q14.data file's data size field is 0 which is unexpected.
+Was the 'perf record' command properly terminated?

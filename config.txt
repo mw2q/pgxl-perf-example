@@ -1,0 +1,19 @@
+node: pgxl
+kernel: Linux 3.16.0-38-generic
+distribution: CentOS release 6.6 (Final)
+dbver: PostgreSQL 9.5alpha1 (Postgres-XL 9.5alpha1)
+sysstat: 9.0.4
+CPUS: 4
+MHz:  1898.710
+model:  Intel(R) Core(TM) i5-4288U CPU @ 2.60GHz
+memory:        16339844 kB
+scale_factor: 10
+num_stream: 2
+load_parameters: -c max_prepared_transactions=30 -c shared_buffers=512MB -c maintenance_work_mem=512MB -c log_checkpoints=on -c log_line_prefix='%t [%p]: [%l-1] user=%u,db=%d,app=%a,client=%h ' -c log_lock_waits=on -c log_temp_files=0
+power_parameters: -c shared_buffers=512MB -c work_mem=512MB -c default_statistics_target=1000 -c log_checkpoints=on -c log_line_prefix='%t [%p]: [%l-1] user=%u,db=%d,app=%a,client=%h ' -c log_lock_waits=on -c log_temp_files=0 -c statement_timeout=30000
+throughput_parameters: -c shared_buffers=512MB -c work_mem=512MB -c default_statistics_target=1000 -c log_checkpoints=on -c log_line_prefix='%t [%p]: [%l-1] user=%u,db=%d,app=%a,client=%h ' -c log_lock_waits=on -c log_temp_files=0 -c statement_timeout=30000
+shmmax: 18446744073692774399
+dbms: pgxl
+mpp: yes
+datanodes: 2
+hostnames: pgxl pgxl1 pgxl2

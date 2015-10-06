@@ -1,0 +1,73 @@
+BEGIN;
+BEGIN
+EXPLAIN
+select
+	nation,
+	o_year,
+	sum(amount) as sum_profit
+from
+	(
+		select
+			n_name as nation,
+			extract(year from o_orderdate) as o_year,
+			l_extendedprice * (1 - l_discount) - ps_supplycost * l_quantity as amount
+		from
+			part,
+			supplier,
+			lineitem,
+			partsupp,
+			orders,
+			nation
+		where
+			s_suppkey = l_suppkey
+			and ps_suppkey = l_suppkey
+			and ps_partkey = l_partkey
+			and p_partkey = l_partkey
+			and o_orderkey = l_orderkey
+			and s_nationkey = n_nationkey
+			and p_name like '%ghost%'
+	) as profit
+group by
+	nation,
+	o_year
+order by
+	nation,
+	o_year desc;
+                                                                                 QUERY PLAN                                                                                  
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ GroupAggregate  (cost=1983899.33..2395008.29 rows=26 width=46)
+   Group Key: nation.n_name, date_part('year'::text, (orders.o_orderdate)::timestamp without time zone)
+   ->  Remote Subquery Scan on all (datanode_1_1,datanode_2_1)  (cost=1983899.33..2395007.45 rows=26 width=46)
+         ->  GroupAggregate  (cost=1983899.33..2395007.45 rows=26 width=46)
+               Group Key: nation.n_name, (date_part('year'::text, (orders.o_orderdate)::timestamp without time zone))
+               ->  Sort  (cost=2395008.06..2395008.12 rows=26 width=46)
+                     Sort Key: nation.n_name, (date_part('year'::text, (orders.o_orderdate)::timestamp without time zone)) DESC
+                     ->  Hash Join  (cost=1983899.33..2395007.45 rows=26 width=46)
+                           Hash Cond: (supplier.s_nationkey = nation.n_nationkey)
+                           ->  Nested Loop  (cost=1983897.77..2395005.40 rows=26 width=24)
+                                 ->  Remote Subquery Scan on all (datanode_1_1,datanode_2_1)  (cost=1983997.59..2394961.90 rows=26 width=24)
+                                       Distribute results by H: l_orderkey
+                                       ->  Hash Join  (cost=1983897.59..2394861.15 rows=26 width=24)
+                                             Hash Cond: ((partsupp.ps_suppkey = supplier.s_suppkey) AND (partsupp.ps_partkey = lineitem.l_partkey))
+                                             ->  Seq Scan on partsupp  (cost=0.00..250957.10 rows=8000310 width=12)
+                                             ->  Hash  (cost=1974820.92..1974820.92 rows=605111 width=36)
+                                                   ->  Hash Join  (cost=70204.55..1974820.92 rows=605111 width=36)
+                                                         Hash Cond: (lineitem.l_suppkey = supplier.s_suppkey)
+                                                         ->  Hash Join  (cost=65775.55..1962068.61 rows=605919 width=28)
+                                                               Hash Cond: (lineitem.l_partkey = part.p_partkey)
+                                                               ->  Remote Subquery Scan on all (datanode_1_1,datanode_2_1)  (cost=100.00..3404982.90 rows=59986100 width=24)
+                                                                     Distribute results by H: l_partkey
+                                                                     ->  Seq Scan on lineitem  (cost=0.00..1665286.00 rows=59986100 width=24)
+                                                               ->  Hash  (cost=65523.03..65523.03 rows=20202 width=4)
+                                                                     ->  Seq Scan on part  (cost=0.00..65523.03 rows=20202 width=4)
+                                                                           Filter: ((p_name)::text ~~ '%ghost%'::text)
+                                                         ->  Hash  (cost=3179.00..3179.00 rows=100000 width=8)
+                                                               ->  Seq Scan on supplier  (cost=0.00..3179.00 rows=100000 width=8)
+                                 ->  Index Only Scan using orders_o_orderkey_o_orderdate_idx on orders  (cost=0.18..5.54 rows=1 width=8)
+                                       Index Cond: (o_orderkey = lineitem.l_orderkey)
+                           ->  Hash  (cost=1.25..1.25 rows=25 width=30)
+                                 ->  Seq Scan on nation  (cost=0.00..1.25 rows=25 width=30)
+(32 rows)
+
+COMMIT;
+COMMIT

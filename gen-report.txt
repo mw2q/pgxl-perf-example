@@ -1,0 +1,670 @@
+Error in plot.window(...) : need finite 'xlim' values
+Calls: plot -> plot.default -> localWindow -> plot.window
+In addition: Warning messages:
+1: In max(df$ctime) : no non-missing arguments to max; returning -Inf
+2: In max(df$numbackends) :
+  no non-missing arguments to max; returning -Inf
+Execution halted
+Error in plot.window(...) : need finite 'ylim' values
+Calls: plot -> plot.default -> localWindow -> plot.window
+In addition: Warning message:
+In max(df$toast_blks_read, na.rm = T) :
+  no non-missing arguments to max; returning -Inf
+Execution halted
+Error in plot.window(...) : need finite 'ylim' values
+Calls: plot -> plot.default -> localWindow -> plot.window
+In addition: Warning message:
+In max(df$toast_blks_read, na.rm = T) :
+  no non-missing arguments to max; returning -Inf
+Execution halted
+Error in plot.window(...) : need finite 'ylim' values
+Calls: plot -> plot.default -> localWindow -> plot.window
+In addition: Warning message:
+In max(df$toast_blks_read, na.rm = T) :
+  no non-missing arguments to max; returning -Inf
+Execution halted
+Error in plot.window(...) : need finite 'ylim' values
+Calls: plot -> plot.default -> localWindow -> plot.window
+In addition: Warning message:
+In max(df$toast_blks_read, na.rm = T) :
+  no non-missing arguments to max; returning -Inf
+Execution halted
+Error in plot.window(...) : need finite 'ylim' values
+Calls: plot -> plot.default -> localWindow -> plot.window
+In addition: Warning message:
+In max(df$toast_blks_read, na.rm = T) :
+  no non-missing arguments to max; returning -Inf
+Execution halted
+Error in plot.window(...) : need finite 'ylim' values
+Calls: plot -> plot.default -> localWindow -> plot.window
+In addition: Warning message:
+In max(df$toast_blks_read, na.rm = T) :
+  no non-missing arguments to max; returning -Inf
+Execution halted
+Error in plot.window(...) : need finite 'ylim' values
+Calls: plot -> plot.default -> localWindow -> plot.window
+In addition: Warning message:
+In max(df$toast_blks_read, na.rm = T) :
+  no non-missing arguments to max; returning -Inf
+Execution halted
+Error in plot.window(...) : need finite 'ylim' values
+Calls: plot -> plot.default -> localWindow -> plot.window
+In addition: Warning message:
+In max(df$toast_blks_read, na.rm = T) :
+  no non-missing arguments to max; returning -Inf
+Execution halted
+Error in plot.window(...) : need finite 'ylim' values
+Calls: plot -> plot.default -> localWindow -> plot.window
+In addition: Warning message:
+In max(df$idx_scan, na.rm = T) :
+  no non-missing arguments to max; returning -Inf
+Execution halted
+Error in plot.window(...) : need finite 'xlim' values
+Calls: plot -> plot.default -> localWindow -> plot.window
+In addition: Warning messages:
+1: In max(df$ctime) : no non-missing arguments to max; returning -Inf
+2: In max(df$numbackends) :
+  no non-missing arguments to max; returning -Inf
+Execution halted
+Error in plot.window(...) : need finite 'ylim' values
+Calls: plot -> plot.default -> localWindow -> plot.window
+In addition: Warning message:
+In max(df$toast_blks_read, na.rm = T) :
+  no non-missing arguments to max; returning -Inf
+Execution halted
+Error in plot.window(...) : need finite 'ylim' values
+Calls: plot -> plot.default -> localWindow -> plot.window
+In addition: Warning message:
+In max(df$toast_blks_read, na.rm = T) :
+  no non-missing arguments to max; returning -Inf
+Execution halted
+Error in plot.window(...) : need finite 'ylim' values
+Calls: plot -> plot.default -> localWindow -> plot.window
+In addition: Warning message:
+In max(df$toast_blks_read, na.rm = T) :
+  no non-missing arguments to max; returning -Inf
+Execution halted
+Error in plot.window(...) : need finite 'ylim' values
+Calls: plot -> plot.default -> localWindow -> plot.window
+In addition: Warning message:
+In max(df$toast_blks_read, na.rm = T) :
+  no non-missing arguments to max; returning -Inf
+Execution halted
+Error in plot.window(...) : need finite 'ylim' values
+Calls: plot -> plot.default -> localWindow -> plot.window
+In addition: Warning message:
+In max(df$toast_blks_read, na.rm = T) :
+  no non-missing arguments to max; returning -Inf
+Execution halted
+Error in plot.window(...) : need finite 'ylim' values
+Calls: plot -> plot.default -> localWindow -> plot.window
+In addition: Warning message:
+In max(df$toast_blks_read, na.rm = T) :
+  no non-missing arguments to max; returning -Inf
+Execution halted
+Error in plot.window(...) : need finite 'ylim' values
+Calls: plot -> plot.default -> localWindow -> plot.window
+In addition: Warning message:
+In max(df$toast_blks_read, na.rm = T) :
+  no non-missing arguments to max; returning -Inf
+Execution halted
+Error in plot.window(...) : need finite 'ylim' values
+Calls: plot -> plot.default -> localWindow -> plot.window
+In addition: Warning message:
+In max(df$toast_blks_read, na.rm = T) :
+  no non-missing arguments to max; returning -Inf
+Execution halted
+Error in plot.window(...) : need finite 'ylim' values
+Calls: plot -> plot.default -> localWindow -> plot.window
+In addition: Warning message:
+In max(df$idx_scan, na.rm = T) :
+  no non-missing arguments to max; returning -Inf
+Execution halted
+Error in plot.window(...) : need finite 'xlim' values
+Calls: plot -> plot.default -> localWindow -> plot.window
+In addition: Warning messages:
+1: In max(df$ctime) : no non-missing arguments to max; returning -Inf
+2: In max(df$numbackends) :
+  no non-missing arguments to max; returning -Inf
+Execution halted
+Error in plot.window(...) : need finite 'ylim' values
+Calls: plot -> plot.default -> localWindow -> plot.window
+In addition: Warning message:
+In max(df$toast_blks_read, na.rm = T) :
+  no non-missing arguments to max; returning -Inf
+Execution halted
+Error in plot.window(...) : need finite 'ylim' values
+Calls: plot -> plot.default -> localWindow -> plot.window
+In addition: Warning message:
+In max(df$toast_blks_read, na.rm = T) :
+  no non-missing arguments to max; returning -Inf
+Execution halted
+Error in plot.window(...) : need finite 'ylim' values
+Calls: plot -> plot.default -> localWindow -> plot.window
+In addition: Warning message:
+In max(df$toast_blks_read, na.rm = T) :
+  no non-missing arguments to max; returning -Inf
+Execution halted
+Error in plot.window(...) : need finite 'ylim' values
+Calls: plot -> plot.default -> localWindow -> plot.window
+In addition: Warning message:
+In max(df$toast_blks_read, na.rm = T) :
+  no non-missing arguments to max; returning -Inf
+Execution halted
+Error in plot.window(...) : need finite 'ylim' values
+Calls: plot -> plot.default -> localWindow -> plot.window
+In addition: Warning message:
+In max(df$toast_blks_read, na.rm = T) :
+  no non-missing arguments to max; returning -Inf
+Execution halted
+Error in plot.window(...) : need finite 'ylim' values
+Calls: plot -> plot.default -> localWindow -> plot.window
+In addition: Warning message:
+In max(df$toast_blks_read, na.rm = T) :
+  no non-missing arguments to max; returning -Inf
+Execution halted
+Error in plot.window(...) : need finite 'ylim' values
+Calls: plot -> plot.default -> localWindow -> plot.window
+In addition: Warning message:
+In max(df$toast_blks_read, na.rm = T) :
+  no non-missing arguments to max; returning -Inf
+Execution halted
+Error in plot.window(...) : need finite 'ylim' values
+Calls: plot -> plot.default -> localWindow -> plot.window
+In addition: Warning message:
+In max(df$toast_blks_read, na.rm = T) :
+  no non-missing arguments to max; returning -Inf
+Execution halted
+Error in plot.window(...) : need finite 'ylim' values
+Calls: plot -> plot.default -> localWindow -> plot.window
+In addition: Warning message:
+In max(df$idx_scan, na.rm = T) :
+  no non-missing arguments to max; returning -Inf
+Execution halted
+Error in read.table(file = file, header = header, sep = sep, quote = quote,  : 
+  no lines available in input
+Calls: read.csv -> read.table
+Execution halted
+Error in read.table(file = file, header = header, sep = sep, quote = quote,  : 
+  no lines available in input
+Calls: read.csv -> read.table
+Execution halted
+Error in read.table(file = file, header = header, sep = sep, quote = quote,  : 
+  no lines available in input
+Calls: read.csv -> read.table
+Execution halted
+Error in plot.window(...) : need finite 'xlim' values
+Calls: plot -> plot.default -> localWindow -> plot.window
+In addition: Warning messages:
+1: In max(df$ctime) : no non-missing arguments to max; returning -Inf
+2: In max(df$numbackends) :
+  no non-missing arguments to max; returning -Inf
+Execution halted
+Error in plot.window(...) : need finite 'ylim' values
+Calls: plot -> plot.default -> localWindow -> plot.window
+In addition: Warning message:
+In max(df$toast_blks_read, na.rm = T) :
+  no non-missing arguments to max; returning -Inf
+Execution halted
+Error in plot.window(...) : need finite 'ylim' values
+Calls: plot -> plot.default -> localWindow -> plot.window
+In addition: Warning message:
+In max(df$toast_blks_read, na.rm = T) :
+  no non-missing arguments to max; returning -Inf
+Execution halted
+Error in plot.window(...) : need finite 'ylim' values
+Calls: plot -> plot.default -> localWindow -> plot.window
+In addition: Warning message:
+In max(df$toast_blks_read, na.rm = T) :
+  no non-missing arguments to max; returning -Inf
+Execution halted
+Error in plot.window(...) : need finite 'ylim' values
+Calls: plot -> plot.default -> localWindow -> plot.window
+In addition: Warning message:
+In max(df$toast_blks_read, na.rm = T) :
+  no non-missing arguments to max; returning -Inf
+Execution halted
+Error in plot.window(...) : need finite 'ylim' values
+Calls: plot -> plot.default -> localWindow -> plot.window
+In addition: Warning message:
+In max(df$toast_blks_read, na.rm = T) :
+  no non-missing arguments to max; returning -Inf
+Execution halted
+Error in plot.window(...) : need finite 'ylim' values
+Calls: plot -> plot.default -> localWindow -> plot.window
+In addition: Warning message:
+In max(df$toast_blks_read, na.rm = T) :
+  no non-missing arguments to max; returning -Inf
+Execution halted
+Error in plot.window(...) : need finite 'ylim' values
+Calls: plot -> plot.default -> localWindow -> plot.window
+In addition: Warning message:
+In max(df$toast_blks_read, na.rm = T) :
+  no non-missing arguments to max; returning -Inf
+Execution halted
+Error in plot.window(...) : need finite 'ylim' values
+Calls: plot -> plot.default -> localWindow -> plot.window
+In addition: Warning message:
+In max(df$toast_blks_read, na.rm = T) :
+  no non-missing arguments to max; returning -Inf
+Execution halted
+Error in plot.window(...) : need finite 'ylim' values
+Calls: plot -> plot.default -> localWindow -> plot.window
+In addition: Warning message:
+In max(df$idx_scan, na.rm = T) :
+  no non-missing arguments to max; returning -Inf
+Execution halted
+Error in plot.window(...) : need finite 'xlim' values
+Calls: plot -> plot.default -> localWindow -> plot.window
+In addition: Warning messages:
+1: In max(df$ctime) : no non-missing arguments to max; returning -Inf
+2: In max(df$numbackends) :
+  no non-missing arguments to max; returning -Inf
+Execution halted
+Error in plot.window(...) : need finite 'ylim' values
+Calls: plot -> plot.default -> localWindow -> plot.window
+In addition: Warning message:
+In max(df$toast_blks_read, na.rm = T) :
+  no non-missing arguments to max; returning -Inf
+Execution halted
+Error in plot.window(...) : need finite 'ylim' values
+Calls: plot -> plot.default -> localWindow -> plot.window
+In addition: Warning message:
+In max(df$toast_blks_read, na.rm = T) :
+  no non-missing arguments to max; returning -Inf
+Execution halted
+Error in plot.window(...) : need finite 'ylim' values
+Calls: plot -> plot.default -> localWindow -> plot.window
+In addition: Warning message:
+In max(df$toast_blks_read, na.rm = T) :
+  no non-missing arguments to max; returning -Inf
+Execution halted
+Error in plot.window(...) : need finite 'ylim' values
+Calls: plot -> plot.default -> localWindow -> plot.window
+In addition: Warning message:
+In max(df$toast_blks_read, na.rm = T) :
+  no non-missing arguments to max; returning -Inf
+Execution halted
+Error in plot.window(...) : need finite 'ylim' values
+Calls: plot -> plot.default -> localWindow -> plot.window
+In addition: Warning message:
+In max(df$toast_blks_read, na.rm = T) :
+  no non-missing arguments to max; returning -Inf
+Execution halted
+Error in plot.window(...) : need finite 'ylim' values
+Calls: plot -> plot.default -> localWindow -> plot.window
+In addition: Warning message:
+In max(df$toast_blks_read, na.rm = T) :
+  no non-missing arguments to max; returning -Inf
+Execution halted
+Error in plot.window(...) : need finite 'ylim' values
+Calls: plot -> plot.default -> localWindow -> plot.window
+In addition: Warning message:
+In max(df$toast_blks_read, na.rm = T) :
+  no non-missing arguments to max; returning -Inf
+Execution halted
+Error in plot.window(...) : need finite 'ylim' values
+Calls: plot -> plot.default -> localWindow -> plot.window
+In addition: Warning message:
+In max(df$toast_blks_read, na.rm = T) :
+  no non-missing arguments to max; returning -Inf
+Execution halted
+Error in plot.window(...) : need finite 'ylim' values
+Calls: plot -> plot.default -> localWindow -> plot.window
+In addition: Warning message:
+In max(df$idx_scan, na.rm = T) :
+  no non-missing arguments to max; returning -Inf
+Execution halted
+Error in plot.window(...) : need finite 'xlim' values
+Calls: plot -> plot.default -> localWindow -> plot.window
+In addition: Warning messages:
+1: In max(df$ctime) : no non-missing arguments to max; returning -Inf
+2: In max(df$numbackends) :
+  no non-missing arguments to max; returning -Inf
+Execution halted
+Error in plot.window(...) : need finite 'ylim' values
+Calls: plot -> plot.default -> localWindow -> plot.window
+In addition: Warning message:
+In max(df$toast_blks_read, na.rm = T) :
+  no non-missing arguments to max; returning -Inf
+Execution halted
+Error in plot.window(...) : need finite 'ylim' values
+Calls: plot -> plot.default -> localWindow -> plot.window
+In addition: Warning message:
+In max(df$toast_blks_read, na.rm = T) :
+  no non-missing arguments to max; returning -Inf
+Execution halted
+Error in plot.window(...) : need finite 'ylim' values
+Calls: plot -> plot.default -> localWindow -> plot.window
+In addition: Warning message:
+In max(df$toast_blks_read, na.rm = T) :
+  no non-missing arguments to max; returning -Inf
+Execution halted
+Error in plot.window(...) : need finite 'ylim' values
+Calls: plot -> plot.default -> localWindow -> plot.window
+In addition: Warning message:
+In max(df$toast_blks_read, na.rm = T) :
+  no non-missing arguments to max; returning -Inf
+Execution halted
+Error in plot.window(...) : need finite 'ylim' values
+Calls: plot -> plot.default -> localWindow -> plot.window
+In addition: Warning message:
+In max(df$toast_blks_read, na.rm = T) :
+  no non-missing arguments to max; returning -Inf
+Execution halted
+Error in plot.window(...) : need finite 'ylim' values
+Calls: plot -> plot.default -> localWindow -> plot.window
+In addition: Warning message:
+In max(df$toast_blks_read, na.rm = T) :
+  no non-missing arguments to max; returning -Inf
+Execution halted
+Error in plot.window(...) : need finite 'ylim' values
+Calls: plot -> plot.default -> localWindow -> plot.window
+In addition: Warning message:
+In max(df$toast_blks_read, na.rm = T) :
+  no non-missing arguments to max; returning -Inf
+Execution halted
+Error in plot.window(...) : need finite 'ylim' values
+Calls: plot -> plot.default -> localWindow -> plot.window
+In addition: Warning message:
+In max(df$toast_blks_read, na.rm = T) :
+  no non-missing arguments to max; returning -Inf
+Execution halted
+Error in plot.window(...) : need finite 'ylim' values
+Calls: plot -> plot.default -> localWindow -> plot.window
+In addition: Warning message:
+In max(df$idx_scan, na.rm = T) :
+  no non-missing arguments to max; returning -Inf
+Execution halted
+Error in read.table(file = file, header = header, sep = sep, quote = quote,  : 
+  no lines available in input
+Calls: read.csv -> read.table
+Execution halted
+Error in read.table(file = file, header = header, sep = sep, quote = quote,  : 
+  no lines available in input
+Calls: read.csv -> read.table
+Execution halted
+Error in read.table(file = file, header = header, sep = sep, quote = quote,  : 
+  no lines available in input
+Calls: read.csv -> read.table
+Execution halted
+Error in plot.window(...) : need finite 'xlim' values
+Calls: plot -> plot.default -> localWindow -> plot.window
+In addition: Warning messages:
+1: In max(df$ctime) : no non-missing arguments to max; returning -Inf
+2: In max(df$numbackends) :
+  no non-missing arguments to max; returning -Inf
+Execution halted
+Error in plot.window(...) : need finite 'ylim' values
+Calls: plot -> plot.default -> localWindow -> plot.window
+In addition: Warning message:
+In max(df$toast_blks_read, na.rm = T) :
+  no non-missing arguments to max; returning -Inf
+Execution halted
+Error in plot.window(...) : need finite 'ylim' values
+Calls: plot -> plot.default -> localWindow -> plot.window
+In addition: Warning message:
+In max(df$toast_blks_read, na.rm = T) :
+  no non-missing arguments to max; returning -Inf
+Execution halted
+Error in plot.window(...) : need finite 'ylim' values
+Calls: plot -> plot.default -> localWindow -> plot.window
+In addition: Warning message:
+In max(df$toast_blks_read, na.rm = T) :
+  no non-missing arguments to max; returning -Inf
+Execution halted
+Error in plot.window(...) : need finite 'ylim' values
+Calls: plot -> plot.default -> localWindow -> plot.window
+In addition: Warning message:
+In max(df$toast_blks_read, na.rm = T) :
+  no non-missing arguments to max; returning -Inf
+Execution halted
+Error in plot.window(...) : need finite 'ylim' values
+Calls: plot -> plot.default -> localWindow -> plot.window
+In addition: Warning message:
+In max(df$toast_blks_read, na.rm = T) :
+  no non-missing arguments to max; returning -Inf
+Execution halted
+Error in plot.window(...) : need finite 'ylim' values
+Calls: plot -> plot.default -> localWindow -> plot.window
+In addition: Warning message:
+In max(df$toast_blks_read, na.rm = T) :
+  no non-missing arguments to max; returning -Inf
+Execution halted
+Error in plot.window(...) : need finite 'ylim' values
+Calls: plot -> plot.default -> localWindow -> plot.window
+In addition: Warning message:
+In max(df$toast_blks_read, na.rm = T) :
+  no non-missing arguments to max; returning -Inf
+Execution halted
+Error in plot.window(...) : need finite 'ylim' values
+Calls: plot -> plot.default -> localWindow -> plot.window
+In addition: Warning message:
+In max(df$toast_blks_read, na.rm = T) :
+  no non-missing arguments to max; returning -Inf
+Execution halted
+Error in plot.window(...) : need finite 'ylim' values
+Calls: plot -> plot.default -> localWindow -> plot.window
+In addition: Warning message:
+In max(df$idx_scan, na.rm = T) :
+  no non-missing arguments to max; returning -Inf
+Execution halted
+Error in plot.window(...) : need finite 'xlim' values
+Calls: plot -> plot.default -> localWindow -> plot.window
+In addition: Warning messages:
+1: In max(df$ctime) : no non-missing arguments to max; returning -Inf
+2: In max(df$numbackends) :
+  no non-missing arguments to max; returning -Inf
+Execution halted
+Error in plot.window(...) : need finite 'ylim' values
+Calls: plot -> plot.default -> localWindow -> plot.window
+In addition: Warning message:
+In max(df$toast_blks_read, na.rm = T) :
+  no non-missing arguments to max; returning -Inf
+Execution halted
+Error in plot.window(...) : need finite 'ylim' values
+Calls: plot -> plot.default -> localWindow -> plot.window
+In addition: Warning message:
+In max(df$toast_blks_read, na.rm = T) :
+  no non-missing arguments to max; returning -Inf
+Execution halted
+Error in plot.window(...) : need finite 'ylim' values
+Calls: plot -> plot.default -> localWindow -> plot.window
+In addition: Warning message:
+In max(df$toast_blks_read, na.rm = T) :
+  no non-missing arguments to max; returning -Inf
+Execution halted
+Error in plot.window(...) : need finite 'ylim' values
+Calls: plot -> plot.default -> localWindow -> plot.window
+In addition: Warning message:
+In max(df$toast_blks_read, na.rm = T) :
+  no non-missing arguments to max; returning -Inf
+Execution halted
+Error in plot.window(...) : need finite 'ylim' values
+Calls: plot -> plot.default -> localWindow -> plot.window
+In addition: Warning message:
+In max(df$toast_blks_read, na.rm = T) :
+  no non-missing arguments to max; returning -Inf
+Execution halted
+Error in plot.window(...) : need finite 'ylim' values
+Calls: plot -> plot.default -> localWindow -> plot.window
+In addition: Warning message:
+In max(df$toast_blks_read, na.rm = T) :
+  no non-missing arguments to max; returning -Inf
+Execution halted
+Error in plot.window(...) : need finite 'ylim' values
+Calls: plot -> plot.default -> localWindow -> plot.window
+In addition: Warning message:
+In max(df$toast_blks_read, na.rm = T) :
+  no non-missing arguments to max; returning -Inf
+Execution halted
+Error in plot.window(...) : need finite 'ylim' values
+Calls: plot -> plot.default -> localWindow -> plot.window
+In addition: Warning message:
+In max(df$toast_blks_read, na.rm = T) :
+  no non-missing arguments to max; returning -Inf
+Execution halted
+Error in plot.window(...) : need finite 'ylim' values
+Calls: plot -> plot.default -> localWindow -> plot.window
+In addition: Warning message:
+In max(df$idx_scan, na.rm = T) :
+  no non-missing arguments to max; returning -Inf
+Execution halted
+Error in plot.window(...) : need finite 'xlim' values
+Calls: plot -> plot.default -> localWindow -> plot.window
+In addition: Warning messages:
+1: In max(df$ctime) : no non-missing arguments to max; returning -Inf
+2: In max(df$numbackends) :
+  no non-missing arguments to max; returning -Inf
+Execution halted
+Error in plot.window(...) : need finite 'ylim' values
+Calls: plot -> plot.default -> localWindow -> plot.window
+In addition: Warning message:
+In max(df$toast_blks_read, na.rm = T) :
+  no non-missing arguments to max; returning -Inf
+Execution halted
+Error in plot.window(...) : need finite 'ylim' values
+Calls: plot -> plot.default -> localWindow -> plot.window
+In addition: Warning message:
+In max(df$toast_blks_read, na.rm = T) :
+  no non-missing arguments to max; returning -Inf
+Execution halted
+Error in plot.window(...) : need finite 'ylim' values
+Calls: plot -> plot.default -> localWindow -> plot.window
+In addition: Warning message:
+In max(df$toast_blks_read, na.rm = T) :
+  no non-missing arguments to max; returning -Inf
+Execution halted
+Error in plot.window(...) : need finite 'ylim' values
+Calls: plot -> plot.default -> localWindow -> plot.window
+In addition: Warning message:
+In max(df$toast_blks_read, na.rm = T) :
+  no non-missing arguments to max; returning -Inf
+Execution halted
+Error in plot.window(...) : need finite 'ylim' values
+Calls: plot -> plot.default -> localWindow -> plot.window
+In addition: Warning message:
+In max(df$toast_blks_read, na.rm = T) :
+  no non-missing arguments to max; returning -Inf
+Execution halted
+Error in plot.window(...) : need finite 'ylim' values
+Calls: plot -> plot.default -> localWindow -> plot.window
+In addition: Warning message:
+In max(df$toast_blks_read, na.rm = T) :
+  no non-missing arguments to max; returning -Inf
+Execution halted
+Error in plot.window(...) : need finite 'ylim' values
+Calls: plot -> plot.default -> localWindow -> plot.window
+In addition: Warning message:
+In max(df$toast_blks_read, na.rm = T) :
+  no non-missing arguments to max; returning -Inf
+Execution halted
+Error in plot.window(...) : need finite 'ylim' values
+Calls: plot -> plot.default -> localWindow -> plot.window
+In addition: Warning message:
+In max(df$toast_blks_read, na.rm = T) :
+  no non-missing arguments to max; returning -Inf
+Execution halted
+Error in plot.window(...) : need finite 'ylim' values
+Calls: plot -> plot.default -> localWindow -> plot.window
+In addition: Warning message:
+In max(df$idx_scan, na.rm = T) :
+  no non-missing arguments to max; returning -Inf
+Execution halted
+Error in file(file, "rt") : cannot open the connection
+Calls: read.csv -> read.table -> file
+In addition: Warning message:
+In file(file, "rt") :
+  cannot open file '/tmp/pgxl-perf-example/throughput/pgxl/sar-cpu.csv': No such file or directory
+Execution halted
+Error in file(file, "rt") : cannot open the connection
+Calls: read.csv -> read.table -> file
+In addition: Warning message:
+In file(file, "rt") :
+  cannot open file '/tmp/pgxl-perf-example/throughput/pgxl/sar-blockdev.csv': No such file or directory
+Execution halted
+Error in file(file, "rt") : cannot open the connection
+Calls: read.csv -> read.table -> file
+In addition: Warning message:
+In file(file, "rt") :
+  cannot open file '/tmp/pgxl-perf-example/throughput/pgxl/sar-mem2.csv': No such file or directory
+Execution halted
+Error in file(file, "rt") : cannot open the connection
+Calls: read.csv -> read.table -> file
+In addition: Warning message:
+In file(file, "rt") :
+  cannot open file '/tmp/pgxl-perf-example/throughput/pgxl/sar-swap.csv': No such file or directory
+Execution halted
+Error in file(file, "rt") : cannot open the connection
+Calls: read.csv -> read.table -> file
+In addition: Warning message:
+In file(file, "rt") :
+  cannot open file '/tmp/pgxl-perf-example/throughput/pgxl/sar-net.csv': No such file or directory
+Execution halted
+Error in file(file, "rt") : cannot open the connection
+Calls: read.csv -> read.table -> file
+In addition: Warning message:
+In file(file, "rt") :
+  cannot open file '/tmp/pgxl-perf-example/throughput/pgxl1/sar-cpu.csv': No such file or directory
+Execution halted
+Error in file(file, "rt") : cannot open the connection
+Calls: read.csv -> read.table -> file
+In addition: Warning message:
+In file(file, "rt") :
+  cannot open file '/tmp/pgxl-perf-example/throughput/pgxl1/sar-blockdev.csv': No such file or directory
+Execution halted
+Error in file(file, "rt") : cannot open the connection
+Calls: read.csv -> read.table -> file
+In addition: Warning message:
+In file(file, "rt") :
+  cannot open file '/tmp/pgxl-perf-example/throughput/pgxl1/sar-mem2.csv': No such file or directory
+Execution halted
+Error in file(file, "rt") : cannot open the connection
+Calls: read.csv -> read.table -> file
+In addition: Warning message:
+In file(file, "rt") :
+  cannot open file '/tmp/pgxl-perf-example/throughput/pgxl1/sar-swap.csv': No such file or directory
+Execution halted
+Error in file(file, "rt") : cannot open the connection
+Calls: read.csv -> read.table -> file
+In addition: Warning message:
+In file(file, "rt") :
+  cannot open file '/tmp/pgxl-perf-example/throughput/pgxl1/sar-net.csv': No such file or directory
+Execution halted
+Error in file(file, "rt") : cannot open the connection
+Calls: read.csv -> read.table -> file
+In addition: Warning message:
+In file(file, "rt") :
+  cannot open file '/tmp/pgxl-perf-example/throughput/pgxl2/sar-cpu.csv': No such file or directory
+Execution halted
+Error in file(file, "rt") : cannot open the connection
+Calls: read.csv -> read.table -> file
+In addition: Warning message:
+In file(file, "rt") :
+  cannot open file '/tmp/pgxl-perf-example/throughput/pgxl2/sar-blockdev.csv': No such file or directory
+Execution halted
+Error in file(file, "rt") : cannot open the connection
+Calls: read.csv -> read.table -> file
+In addition: Warning message:
+In file(file, "rt") :
+  cannot open file '/tmp/pgxl-perf-example/throughput/pgxl2/sar-mem2.csv': No such file or directory
+Execution halted
+Error in file(file, "rt") : cannot open the connection
+Calls: read.csv -> read.table -> file
+In addition: Warning message:
+In file(file, "rt") :
+  cannot open file '/tmp/pgxl-perf-example/throughput/pgxl2/sar-swap.csv': No such file or directory
+Execution halted
+Error in file(file, "rt") : cannot open the connection
+Calls: read.csv -> read.table -> file
+In addition: Warning message:
+In file(file, "rt") :
+  cannot open file '/tmp/pgxl-perf-example/throughput/pgxl2/sar-net.csv': No such file or directory
+Execution halted
+Warning messages:
+1: In `[<-.factor`(`*tmp*`, ri, value = c(0, 0, 0, 0, 0, 0, 0, 0, 0,  :
+  invalid factor level, NA generated
+2: In `[<-.factor`(`*tmp*`, ri, value = c(0, 0, 0, 0, 0, 0, 0, 0, 0,  :
+  invalid factor level, NA generated
+3: In `[<-.factor`(`*tmp*`, ri, value = c(0, 0, 0, 0, 0, 0, 0, 0, 0,  :
+  invalid factor level, NA generated

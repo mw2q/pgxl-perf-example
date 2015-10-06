@@ -1,0 +1,249 @@
+Tue Oct  6 12:25:15 EDT 2015: start throughput queriy stream 1 
+ERROR:  canceling statement due to statement timeout
+[ perf record: Woken up 1 times to write data ]
+[ perf record: Captured and wrote 0.916 MB /tmp/pgxl-perf-example/throughput/results/1/perf/21/q21-perf.data (~40009 samples) ]
+[libahci] with build id 5f59e0a5d172187f08492420b63f604bf78583e0 not found, continuing without symbols
+[i915] with build id 3fc50c07c20f141113cf17c44a9af9ca19a9b433 not found, continuing without symbols
+[wl] with build id 528434a0d2d226611fd5ea9344f7661d82cbc9e2 not found, continuing without symbols
+[nf_conntrack] with build id 71beb827b8c31577411d632134fc7db3e382cdf2 not found, continuing without symbols
+[veth] with build id c5cb2cae5e0649756ed8e0aafa4208dc57806d73 not found, continuing without symbols
+[bridge] with build id a1c099078cfdae1ae5f9e688c7fbc6a5d8537db0 not found, continuing without symbols
+[ip_tables] with build id bd6b11b6a2eb996ab77d445a0fc603d318d7b42e not found, continuing without symbols
+[iptable_mangle] with build id 074effa02ce8efd964b49fa2ac507411a7a60d3f not found, continuing without symbols
+[iptable_nat] with build id 1da768abcd06708fd66acbc16879cb9b8b2462b0 not found, continuing without symbols
+[nf_conntrack_ipv4] with build id 04b4319c099349681aa57c4e32718ccd0238edea not found, continuing without symbols
+[kvm] with build id ce746e1c4ea61f09377bd43b54a1378356e2c88c not found, continuing without symbols
+[nf_nat] with build id b5b620def9e4c579e5b88eab3c96e5b3b240dd8c not found, continuing without symbols
+ERROR:  canceling statement due to statement timeout
+[ perf record: Woken up 1 times to write data ]
+[ perf record: Captured and wrote 0.902 MB /tmp/pgxl-perf-example/throughput/results/1/perf/3/q3-perf.data (~39411 samples) ]
+[i915] with build id 3fc50c07c20f141113cf17c44a9af9ca19a9b433 not found, continuing without symbols
+[libahci] with build id 5f59e0a5d172187f08492420b63f604bf78583e0 not found, continuing without symbols
+[nf_conntrack] with build id 71beb827b8c31577411d632134fc7db3e382cdf2 not found, continuing without symbols
+[wl] with build id 528434a0d2d226611fd5ea9344f7661d82cbc9e2 not found, continuing without symbols
+[ip_tables] with build id bd6b11b6a2eb996ab77d445a0fc603d318d7b42e not found, continuing without symbols
+[veth] with build id c5cb2cae5e0649756ed8e0aafa4208dc57806d73 not found, continuing without symbols
+[tg3] with build id 55e5b9d2d038ef5b6bf29b145a7c3f48983f4ac5 not found, continuing without symbols
+[ebtable_filter] with build id 2730e06738f0acd484ba0303e3a88b0c63ca975e not found, continuing without symbols
+[nf_conntrack_ipv4] with build id 04b4319c099349681aa57c4e32718ccd0238edea not found, continuing without symbols
+ERROR:  canceling statement due to statement timeout
+[ perf record: Woken up 1 times to write data ]
+[ perf record: Captured and wrote 0.783 MB /tmp/pgxl-perf-example/throughput/results/1/perf/18/q18-perf.data (~34212 samples) ]
+[libahci] with build id 5f59e0a5d172187f08492420b63f604bf78583e0 not found, continuing without symbols
+[bridge] with build id a1c099078cfdae1ae5f9e688c7fbc6a5d8537db0 not found, continuing without symbols
+[ip_tables] with build id bd6b11b6a2eb996ab77d445a0fc603d318d7b42e not found, continuing without symbols
+[nf_conntrack] with build id 71beb827b8c31577411d632134fc7db3e382cdf2 not found, continuing without symbols
+[i915] with build id 3fc50c07c20f141113cf17c44a9af9ca19a9b433 not found, continuing without symbols
+[tg3] with build id 55e5b9d2d038ef5b6bf29b145a7c3f48983f4ac5 not found, continuing without symbols
+[wl] with build id 528434a0d2d226611fd5ea9344f7661d82cbc9e2 not found, continuing without symbols
+[ perf record: Woken up 1 times to write data ]
+[ perf record: Captured and wrote 0.607 MB /tmp/pgxl-perf-example/throughput/results/1/perf/5/q5-perf.data (~26518 samples) ]
+[libahci] with build id 5f59e0a5d172187f08492420b63f604bf78583e0 not found, continuing without symbols
+[wl] with build id 528434a0d2d226611fd5ea9344f7661d82cbc9e2 not found, continuing without symbols
+[bridge] with build id a1c099078cfdae1ae5f9e688c7fbc6a5d8537db0 not found, continuing without symbols
+[ip_tables] with build id bd6b11b6a2eb996ab77d445a0fc603d318d7b42e not found, continuing without symbols
+[tg3] with build id 55e5b9d2d038ef5b6bf29b145a7c3f48983f4ac5 not found, continuing without symbols
+[iptable_nat] with build id 1da768abcd06708fd66acbc16879cb9b8b2462b0 not found, continuing without symbols
+[iptable_mangle] with build id 074effa02ce8efd964b49fa2ac507411a7a60d3f not found, continuing without symbols
+[nf_conntrack] with build id 71beb827b8c31577411d632134fc7db3e382cdf2 not found, continuing without symbols
+[iptable_filter] with build id 21e85a526807bbfcd3926820d2bba85e2196d315 not found, continuing without symbols
+[ perf record: Woken up 1 times to write data ]
+[ perf record: Captured and wrote 0.414 MB /tmp/pgxl-perf-example/throughput/results/1/perf/11/q11-perf.data (~18096 samples) ]
+[iptable_nat] with build id 1da768abcd06708fd66acbc16879cb9b8b2462b0 not found, continuing without symbols
+[libahci] with build id 5f59e0a5d172187f08492420b63f604bf78583e0 not found, continuing without symbols
+[nf_conntrack_ipv4] with build id 04b4319c099349681aa57c4e32718ccd0238edea not found, continuing without symbols
+[nf_conntrack] with build id 71beb827b8c31577411d632134fc7db3e382cdf2 not found, continuing without symbols
+[ebtable_filter] with build id 2730e06738f0acd484ba0303e3a88b0c63ca975e not found, continuing without symbols
+[tg3] with build id 55e5b9d2d038ef5b6bf29b145a7c3f48983f4ac5 not found, continuing without symbols
+[bridge] with build id a1c099078cfdae1ae5f9e688c7fbc6a5d8537db0 not found, continuing without symbols
+[ip_tables] with build id bd6b11b6a2eb996ab77d445a0fc603d318d7b42e not found, continuing without symbols
+[wl] with build id 528434a0d2d226611fd5ea9344f7661d82cbc9e2 not found, continuing without symbols
+[iptable_filter] with build id 21e85a526807bbfcd3926820d2bba85e2196d315 not found, continuing without symbols
+ERROR:  canceling statement due to statement timeout
+[ perf record: Woken up 1 times to write data ]
+[ perf record: Captured and wrote 0.697 MB /tmp/pgxl-perf-example/throughput/results/1/perf/7/q7-perf.data (~30441 samples) ]
+[libahci] with build id 5f59e0a5d172187f08492420b63f604bf78583e0 not found, continuing without symbols
+[ip_tables] with build id bd6b11b6a2eb996ab77d445a0fc603d318d7b42e not found, continuing without symbols
+[bridge] with build id a1c099078cfdae1ae5f9e688c7fbc6a5d8537db0 not found, continuing without symbols
+[iptable_mangle] with build id 074effa02ce8efd964b49fa2ac507411a7a60d3f not found, continuing without symbols
+[nf_conntrack] with build id 71beb827b8c31577411d632134fc7db3e382cdf2 not found, continuing without symbols
+[i915] with build id 3fc50c07c20f141113cf17c44a9af9ca19a9b433 not found, continuing without symbols
+[tg3] with build id 55e5b9d2d038ef5b6bf29b145a7c3f48983f4ac5 not found, continuing without symbols
+[wl] with build id 528434a0d2d226611fd5ea9344f7661d82cbc9e2 not found, continuing without symbols
+[iptable_filter] with build id 21e85a526807bbfcd3926820d2bba85e2196d315 not found, continuing without symbols
+[ perf record: Woken up 1 times to write data ]
+[ perf record: Captured and wrote 0.307 MB /tmp/pgxl-perf-example/throughput/results/1/perf/6/q6-perf.data (~13400 samples) ]
+[libahci] with build id 5f59e0a5d172187f08492420b63f604bf78583e0 not found, continuing without symbols
+[i915] with build id 3fc50c07c20f141113cf17c44a9af9ca19a9b433 not found, continuing without symbols
+[wl] with build id 528434a0d2d226611fd5ea9344f7661d82cbc9e2 not found, continuing without symbols
+ERROR:  canceling statement due to statement timeout
+[ perf record: Woken up 2 times to write data ]
+[ perf record: Captured and wrote 1.040 MB /tmp/pgxl-perf-example/throughput/results/1/perf/20/q20-perf.data (~45454 samples) ]
+[nf_nat] with build id b5b620def9e4c579e5b88eab3c96e5b3b240dd8c not found, continuing without symbols
+[ip_tables] with build id bd6b11b6a2eb996ab77d445a0fc603d318d7b42e not found, continuing without symbols
+[nf_conntrack_ipv4] with build id 04b4319c099349681aa57c4e32718ccd0238edea not found, continuing without symbols
+[nf_conntrack] with build id 71beb827b8c31577411d632134fc7db3e382cdf2 not found, continuing without symbols
+[libahci] with build id 5f59e0a5d172187f08492420b63f604bf78583e0 not found, continuing without symbols
+[iptable_mangle] with build id 074effa02ce8efd964b49fa2ac507411a7a60d3f not found, continuing without symbols
+[iptable_nat] with build id 1da768abcd06708fd66acbc16879cb9b8b2462b0 not found, continuing without symbols
+[bridge] with build id a1c099078cfdae1ae5f9e688c7fbc6a5d8537db0 not found, continuing without symbols
+[veth] with build id c5cb2cae5e0649756ed8e0aafa4208dc57806d73 not found, continuing without symbols
+[ebtables] with build id ce1f9e2b998bbfa78e1eba5400b16e30cd8fd111 not found, continuing without symbols
+[ebtable_filter] with build id 2730e06738f0acd484ba0303e3a88b0c63ca975e not found, continuing without symbols
+[nf_defrag_ipv4] with build id 643745cb0dd235e8e6cc77f44fc0ae62384b9b6b not found, continuing without symbols
+[wl] with build id 528434a0d2d226611fd5ea9344f7661d82cbc9e2 not found, continuing without symbols
+[kvm] with build id ce746e1c4ea61f09377bd43b54a1378356e2c88c not found, continuing without symbols
+[i915] with build id 3fc50c07c20f141113cf17c44a9af9ca19a9b433 not found, continuing without symbols
+[ perf record: Woken up 1 times to write data ]
+[ perf record: Captured and wrote 0.150 MB /tmp/pgxl-perf-example/throughput/results/1/perf/17/q17-perf.data (~6562 samples) ]
+[nf_conntrack] with build id 71beb827b8c31577411d632134fc7db3e382cdf2 not found, continuing without symbols
+[ip_tables] with build id bd6b11b6a2eb996ab77d445a0fc603d318d7b42e not found, continuing without symbols
+[libahci] with build id 5f59e0a5d172187f08492420b63f604bf78583e0 not found, continuing without symbols
+[bridge] with build id a1c099078cfdae1ae5f9e688c7fbc6a5d8537db0 not found, continuing without symbols
+[iptable_nat] with build id 1da768abcd06708fd66acbc16879cb9b8b2462b0 not found, continuing without symbols
+[nf_nat] with build id b5b620def9e4c579e5b88eab3c96e5b3b240dd8c not found, continuing without symbols
+[veth] with build id c5cb2cae5e0649756ed8e0aafa4208dc57806d73 not found, continuing without symbols
+[wl] with build id 528434a0d2d226611fd5ea9344f7661d82cbc9e2 not found, continuing without symbols
+[nf_conntrack_ipv4] with build id 04b4319c099349681aa57c4e32718ccd0238edea not found, continuing without symbols
+[ perf record: Woken up 1 times to write data ]
+[ perf record: Captured and wrote 0.398 MB /tmp/pgxl-perf-example/throughput/results/1/perf/12/q12-perf.data (~17376 samples) ]
+[libahci] with build id 5f59e0a5d172187f08492420b63f604bf78583e0 not found, continuing without symbols
+[nf_conntrack] with build id 71beb827b8c31577411d632134fc7db3e382cdf2 not found, continuing without symbols
+[wl] with build id 528434a0d2d226611fd5ea9344f7661d82cbc9e2 not found, continuing without symbols
+[ perf record: Woken up 1 times to write data ]
+[ perf record: Captured and wrote 0.382 MB /tmp/pgxl-perf-example/throughput/results/1/perf/16/q16-perf.data (~16668 samples) ]
+[libahci] with build id 5f59e0a5d172187f08492420b63f604bf78583e0 not found, continuing without symbols
+[bridge] with build id a1c099078cfdae1ae5f9e688c7fbc6a5d8537db0 not found, continuing without symbols
+[nf_conntrack] with build id 71beb827b8c31577411d632134fc7db3e382cdf2 not found, continuing without symbols
+[iptable_nat] with build id 1da768abcd06708fd66acbc16879cb9b8b2462b0 not found, continuing without symbols
+[ip_tables] with build id bd6b11b6a2eb996ab77d445a0fc603d318d7b42e not found, continuing without symbols
+[wl] with build id 528434a0d2d226611fd5ea9344f7661d82cbc9e2 not found, continuing without symbols
+[nf_nat] with build id b5b620def9e4c579e5b88eab3c96e5b3b240dd8c not found, continuing without symbols
+[iptable_mangle] with build id 074effa02ce8efd964b49fa2ac507411a7a60d3f not found, continuing without symbols
+[i915] with build id 3fc50c07c20f141113cf17c44a9af9ca19a9b433 not found, continuing without symbols
+[ perf record: Woken up 1 times to write data ]
+[ perf record: Captured and wrote 0.465 MB /tmp/pgxl-perf-example/throughput/results/1/perf/15/q15-perf.data (~20318 samples) ]
+[nf_conntrack] with build id 71beb827b8c31577411d632134fc7db3e382cdf2 not found, continuing without symbols
+[iptable_nat] with build id 1da768abcd06708fd66acbc16879cb9b8b2462b0 not found, continuing without symbols
+[libahci] with build id 5f59e0a5d172187f08492420b63f604bf78583e0 not found, continuing without symbols
+[ip_tables] with build id bd6b11b6a2eb996ab77d445a0fc603d318d7b42e not found, continuing without symbols
+[ebtables] with build id ce1f9e2b998bbfa78e1eba5400b16e30cd8fd111 not found, continuing without symbols
+[tg3] with build id 55e5b9d2d038ef5b6bf29b145a7c3f48983f4ac5 not found, continuing without symbols
+[wl] with build id 528434a0d2d226611fd5ea9344f7661d82cbc9e2 not found, continuing without symbols
+[bridge] with build id a1c099078cfdae1ae5f9e688c7fbc6a5d8537db0 not found, continuing without symbols
+[drm] with build id 50ecd72a48417c4e3c82f288a93a2a470523ee3f not found, continuing without symbols
+ERROR:  canceling statement due to statement timeout
+[ perf record: Woken up 1 times to write data ]
+[ perf record: Captured and wrote 0.939 MB /tmp/pgxl-perf-example/throughput/results/1/perf/13/q13-perf.data (~41012 samples) ]
+[libahci] with build id 5f59e0a5d172187f08492420b63f604bf78583e0 not found, continuing without symbols
+[ip_tables] with build id bd6b11b6a2eb996ab77d445a0fc603d318d7b42e not found, continuing without symbols
+[i915] with build id 3fc50c07c20f141113cf17c44a9af9ca19a9b433 not found, continuing without symbols
+[nf_conntrack] with build id 71beb827b8c31577411d632134fc7db3e382cdf2 not found, continuing without symbols
+[bridge] with build id a1c099078cfdae1ae5f9e688c7fbc6a5d8537db0 not found, continuing without symbols
+[ebtables] with build id ce1f9e2b998bbfa78e1eba5400b16e30cd8fd111 not found, continuing without symbols
+[iptable_nat] with build id 1da768abcd06708fd66acbc16879cb9b8b2462b0 not found, continuing without symbols
+[wl] with build id 528434a0d2d226611fd5ea9344f7661d82cbc9e2 not found, continuing without symbols
+[iptable_mangle] with build id 074effa02ce8efd964b49fa2ac507411a7a60d3f not found, continuing without symbols
+[nf_defrag_ipv4] with build id 643745cb0dd235e8e6cc77f44fc0ae62384b9b6b not found, continuing without symbols
+[ perf record: Woken up 1 times to write data ]
+[ perf record: Captured and wrote 0.434 MB /tmp/pgxl-perf-example/throughput/results/1/perf/10/q10-perf.data (~18962 samples) ]
+[libahci] with build id 5f59e0a5d172187f08492420b63f604bf78583e0 not found, continuing without symbols
+[i915] with build id 3fc50c07c20f141113cf17c44a9af9ca19a9b433 not found, continuing without symbols
+[bridge] with build id a1c099078cfdae1ae5f9e688c7fbc6a5d8537db0 not found, continuing without symbols
+[kvm] with build id ce746e1c4ea61f09377bd43b54a1378356e2c88c not found, continuing without symbols
+[ip_tables] with build id bd6b11b6a2eb996ab77d445a0fc603d318d7b42e not found, continuing without symbols
+[wl] with build id 528434a0d2d226611fd5ea9344f7661d82cbc9e2 not found, continuing without symbols
+[nf_conntrack] with build id 71beb827b8c31577411d632134fc7db3e382cdf2 not found, continuing without symbols
+[nf_nat] with build id b5b620def9e4c579e5b88eab3c96e5b3b240dd8c not found, continuing without symbols
+[ perf record: Woken up 1 times to write data ]
+[ perf record: Captured and wrote 0.514 MB /tmp/pgxl-perf-example/throughput/results/1/perf/2/q2-perf.data (~22463 samples) ]
+[libahci] with build id 5f59e0a5d172187f08492420b63f604bf78583e0 not found, continuing without symbols
+[iptable_nat] with build id 1da768abcd06708fd66acbc16879cb9b8b2462b0 not found, continuing without symbols
+[ip_tables] with build id bd6b11b6a2eb996ab77d445a0fc603d318d7b42e not found, continuing without symbols
+[bridge] with build id a1c099078cfdae1ae5f9e688c7fbc6a5d8537db0 not found, continuing without symbols
+[nf_conntrack] with build id 71beb827b8c31577411d632134fc7db3e382cdf2 not found, continuing without symbols
+[iptable_mangle] with build id 074effa02ce8efd964b49fa2ac507411a7a60d3f not found, continuing without symbols
+[nf_defrag_ipv4] with build id 643745cb0dd235e8e6cc77f44fc0ae62384b9b6b not found, continuing without symbols
+[nf_conntrack_ipv4] with build id 04b4319c099349681aa57c4e32718ccd0238edea not found, continuing without symbols
+[wl] with build id 528434a0d2d226611fd5ea9344f7661d82cbc9e2 not found, continuing without symbols
+[ perf record: Woken up 1 times to write data ]
+[ perf record: Captured and wrote 0.541 MB /tmp/pgxl-perf-example/throughput/results/1/perf/8/q8-perf.data (~23619 samples) ]
+[libahci] with build id 5f59e0a5d172187f08492420b63f604bf78583e0 not found, continuing without symbols
+[nf_conntrack] with build id 71beb827b8c31577411d632134fc7db3e382cdf2 not found, continuing without symbols
+[nf_defrag_ipv4] with build id 643745cb0dd235e8e6cc77f44fc0ae62384b9b6b not found, continuing without symbols
+[nf_conntrack_ipv4] with build id 04b4319c099349681aa57c4e32718ccd0238edea not found, continuing without symbols
+[iptable_nat] with build id 1da768abcd06708fd66acbc16879cb9b8b2462b0 not found, continuing without symbols
+[ip_tables] with build id bd6b11b6a2eb996ab77d445a0fc603d318d7b42e not found, continuing without symbols
+[iptable_mangle] with build id 074effa02ce8efd964b49fa2ac507411a7a60d3f not found, continuing without symbols
+[veth] with build id c5cb2cae5e0649756ed8e0aafa4208dc57806d73 not found, continuing without symbols
+[bridge] with build id a1c099078cfdae1ae5f9e688c7fbc6a5d8537db0 not found, continuing without symbols
+[wl] with build id 528434a0d2d226611fd5ea9344f7661d82cbc9e2 not found, continuing without symbols
+[ perf record: Woken up 1 times to write data ]
+[ perf record: Captured and wrote 0.553 MB /tmp/pgxl-perf-example/throughput/results/1/perf/14/q14-perf.data (~24154 samples) ]
+[libahci] with build id 5f59e0a5d172187f08492420b63f604bf78583e0 not found, continuing without symbols
+[nf_conntrack] with build id 71beb827b8c31577411d632134fc7db3e382cdf2 not found, continuing without symbols
+[ip_tables] with build id bd6b11b6a2eb996ab77d445a0fc603d318d7b42e not found, continuing without symbols
+[i915] with build id 3fc50c07c20f141113cf17c44a9af9ca19a9b433 not found, continuing without symbols
+[drm] with build id 50ecd72a48417c4e3c82f288a93a2a470523ee3f not found, continuing without symbols
+[wl] with build id 528434a0d2d226611fd5ea9344f7661d82cbc9e2 not found, continuing without symbols
+[bridge] with build id a1c099078cfdae1ae5f9e688c7fbc6a5d8537db0 not found, continuing without symbols
+[nf_conntrack_ipv4] with build id 04b4319c099349681aa57c4e32718ccd0238edea not found, continuing without symbols
+[ perf record: Woken up 1 times to write data ]
+[ perf record: Captured and wrote 0.104 MB /tmp/pgxl-perf-example/throughput/results/1/perf/19/q19-perf.data (~4538 samples) ]
+[nf_conntrack] with build id 71beb827b8c31577411d632134fc7db3e382cdf2 not found, continuing without symbols
+[iptable_nat] with build id 1da768abcd06708fd66acbc16879cb9b8b2462b0 not found, continuing without symbols
+[snd_hda_intel] with build id abe1fa23b9e33740f02e5eca3acf5a4b922d7d69 not found, continuing without symbols
+[bridge] with build id a1c099078cfdae1ae5f9e688c7fbc6a5d8537db0 not found, continuing without symbols
+[libahci] with build id 5f59e0a5d172187f08492420b63f604bf78583e0 not found, continuing without symbols
+[ip_tables] with build id bd6b11b6a2eb996ab77d445a0fc603d318d7b42e not found, continuing without symbols
+[wl] with build id 528434a0d2d226611fd5ea9344f7661d82cbc9e2 not found, continuing without symbols
+ERROR:  canceling statement due to statement timeout
+[ perf record: Woken up 1 times to write data ]
+[ perf record: Captured and wrote 0.936 MB /tmp/pgxl-perf-example/throughput/results/1/perf/9/q9-perf.data (~40908 samples) ]
+[libahci] with build id 5f59e0a5d172187f08492420b63f604bf78583e0 not found, continuing without symbols
+[ip_tables] with build id bd6b11b6a2eb996ab77d445a0fc603d318d7b42e not found, continuing without symbols
+[nf_conntrack] with build id 71beb827b8c31577411d632134fc7db3e382cdf2 not found, continuing without symbols
+[wl] with build id 528434a0d2d226611fd5ea9344f7661d82cbc9e2 not found, continuing without symbols
+[iptable_nat] with build id 1da768abcd06708fd66acbc16879cb9b8b2462b0 not found, continuing without symbols
+[bridge] with build id a1c099078cfdae1ae5f9e688c7fbc6a5d8537db0 not found, continuing without symbols
+[drm] with build id 50ecd72a48417c4e3c82f288a93a2a470523ee3f not found, continuing without symbols
+[nf_conntrack_ipv4] with build id 04b4319c099349681aa57c4e32718ccd0238edea not found, continuing without symbols
+[i915] with build id 3fc50c07c20f141113cf17c44a9af9ca19a9b433 not found, continuing without symbols
+[tg3] with build id 55e5b9d2d038ef5b6bf29b145a7c3f48983f4ac5 not found, continuing without symbols
+[ perf record: Woken up 1 times to write data ]
+[ perf record: Captured and wrote 0.805 MB /tmp/pgxl-perf-example/throughput/results/1/perf/22/q22-perf.data (~35169 samples) ]
+[iptable_nat] with build id 1da768abcd06708fd66acbc16879cb9b8b2462b0 not found, continuing without symbols
+[nf_conntrack] with build id 71beb827b8c31577411d632134fc7db3e382cdf2 not found, continuing without symbols
+[libahci] with build id 5f59e0a5d172187f08492420b63f604bf78583e0 not found, continuing without symbols
+[ip_tables] with build id bd6b11b6a2eb996ab77d445a0fc603d318d7b42e not found, continuing without symbols
+[bridge] with build id a1c099078cfdae1ae5f9e688c7fbc6a5d8537db0 not found, continuing without symbols
+[nf_nat] with build id b5b620def9e4c579e5b88eab3c96e5b3b240dd8c not found, continuing without symbols
+[iptable_mangle] with build id 074effa02ce8efd964b49fa2ac507411a7a60d3f not found, continuing without symbols
+[iptable_filter] with build id 21e85a526807bbfcd3926820d2bba85e2196d315 not found, continuing without symbols
+[i915] with build id 3fc50c07c20f141113cf17c44a9af9ca19a9b433 not found, continuing without symbols
+[wl] with build id 528434a0d2d226611fd5ea9344f7661d82cbc9e2 not found, continuing without symbols
+[ebtable_filter] with build id 2730e06738f0acd484ba0303e3a88b0c63ca975e not found, continuing without symbols
+[nf_defrag_ipv4] with build id 643745cb0dd235e8e6cc77f44fc0ae62384b9b6b not found, continuing without symbols
+[veth] with build id c5cb2cae5e0649756ed8e0aafa4208dc57806d73 not found, continuing without symbols
+ERROR:  canceling statement due to statement timeout
+[ perf record: Woken up 1 times to write data ]
+[ perf record: Captured and wrote 0.981 MB /tmp/pgxl-perf-example/throughput/results/1/perf/1/q1-perf.data (~42843 samples) ]
+[libahci] with build id 5f59e0a5d172187f08492420b63f604bf78583e0 not found, continuing without symbols
+[ip_tables] with build id bd6b11b6a2eb996ab77d445a0fc603d318d7b42e not found, continuing without symbols
+[ebtable_filter] with build id 2730e06738f0acd484ba0303e3a88b0c63ca975e not found, continuing without symbols
+[ebtables] with build id ce1f9e2b998bbfa78e1eba5400b16e30cd8fd111 not found, continuing without symbols
+[bridge] with build id a1c099078cfdae1ae5f9e688c7fbc6a5d8537db0 not found, continuing without symbols
+[iptable_nat] with build id 1da768abcd06708fd66acbc16879cb9b8b2462b0 not found, continuing without symbols
+[nf_conntrack] with build id 71beb827b8c31577411d632134fc7db3e382cdf2 not found, continuing without symbols
+[iptable_mangle] with build id 074effa02ce8efd964b49fa2ac507411a7a60d3f not found, continuing without symbols
+[kvm] with build id ce746e1c4ea61f09377bd43b54a1378356e2c88c not found, continuing without symbols
+[i915] with build id 3fc50c07c20f141113cf17c44a9af9ca19a9b433 not found, continuing without symbols
+[veth] with build id c5cb2cae5e0649756ed8e0aafa4208dc57806d73 not found, continuing without symbols
+[drm] with build id 50ecd72a48417c4e3c82f288a93a2a470523ee3f not found, continuing without symbols
+[wl] with build id 528434a0d2d226611fd5ea9344f7661d82cbc9e2 not found, continuing without symbols
+[nf_nat] with build id b5b620def9e4c579e5b88eab3c96e5b3b240dd8c not found, continuing without symbols
+[ perf record: Woken up 1 times to write data ]
+[ perf record: Captured and wrote 0.236 MB /tmp/pgxl-perf-example/throughput/results/1/perf/4/q4-perf.data (~10311 samples) ]
+[libahci] with build id 5f59e0a5d172187f08492420b63f604bf78583e0 not found, continuing without symbols
+[nf_conntrack_ipv4] with build id 04b4319c099349681aa57c4e32718ccd0238edea not found, continuing without symbols
+[wl] with build id 528434a0d2d226611fd5ea9344f7661d82cbc9e2 not found, continuing without symbols

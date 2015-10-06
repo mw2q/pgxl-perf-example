@@ -1,0 +1,59 @@
+BEGIN;
+BEGIN
+EXPLAIN
+select
+	p_brand,
+	p_type,
+	p_size,
+	count(distinct ps_suppkey) as supplier_cnt
+from
+	partsupp,
+	part
+where
+	p_partkey = ps_partkey
+	and p_brand <> 'Brand#42'
+	and p_type not like 'LARGE PLATED%'
+	and p_size in (16, 46, 8, 32, 21, 14, 44, 10)
+	and ps_suppkey not in (
+		select
+			s_suppkey
+		from
+			supplier
+		where
+			s_comment like '%Customer%Complaints%'
+	)
+group by
+	p_brand,
+	p_type,
+	p_size
+order by
+	supplier_cnt desc,
+	p_brand,
+	p_type,
+	p_size;
+                                                                QUERY PLAN                                                                
+------------------------------------------------------------------------------------------------------------------------------------------
+ Sort  (cost=357978.66..358047.57 rows=27561 width=40)
+   Sort Key: (count(DISTINCT partsupp.ps_suppkey)) DESC, part.p_brand, part.p_type, part.p_size
+   ->  GroupAggregate  (cost=57952.29..355945.99 rows=27561 width=40)
+         Group Key: part.p_brand, part.p_type, part.p_size
+         ->  Remote Subquery Scan on all (datanode_1_1,datanode_2_1)  (cost=57952.29..349790.56 rows=587982 width=40)
+               ->  Sort  (cost=406135.15..407605.11 rows=587982 width=40)
+                     Sort Key: part.p_brand, part.p_type, part.p_size
+                     ->  Hash Join  (cost=57952.29..349790.56 rows=587982 width=40)
+                           Hash Cond: (partsupp.ps_partkey = part.p_partkey)
+                           ->  Seq Scan on partsupp  (cost=39.10..270996.97 rows=4000155 width=8)
+                                 Filter: (NOT (hashed SubPlan 1))
+                                 SubPlan 1
+                                   ->  Remote Subquery Scan on all (datanode_2_1)  (cost=0.12..39.07 rows=10 width=4)
+                                         ->  Index Scan using supplier_s_suppkey_idx_like on supplier  (cost=0.12..39.07 rows=10 width=4)
+                           ->  Hash  (cost=54238.44..54238.44 rows=293980 width=40)
+                                 ->  Bitmap Heap Scan on part  (cost=5730.41..54238.44 rows=293980 width=40)
+                                       Recheck Cond: (p_size = ANY ('{16,46,8,32,21,14,44,10}'::integer[]))
+                                       Filter: ((p_brand <> 'Brand#42'::bpchar) AND ((p_type)::text !~~ 'LARGE PLATED%'::text))
+                                       ->  Bitmap Index Scan on part_p_size_idx  (cost=0.00..5656.92 rows=319401 width=0)
+                                             Index Cond: (p_size = ANY ('{16,46,8,32,21,14,44,10}'::integer[]))
+(20 rows)
+
+COMMIT;
+COMMIT

@@ -1,0 +1,265 @@
+<html>
+<head>
+<title>Database Test 3 Load Test Details</title>
+</head>
+<body>
+
+<h1>Database Test 3 Load Test Details</h1>
+<h2>Kernel and Application Profiles</h2>
+<p>
+<h3>Linux perf</h3>
+<ul>
+  <li>pgxl: <a href="perf/perf-report-pgxl.txt.gz">report</a> |
+      <a href="perf/perf-annotate-pgxl.txt.gz">annotated source</a> |
+      <a href="perf/perf-trace-pgxl.txt.gz">trace</a>
+  </li>
+  <li>pgxl1: <a href="perf/perf-report-pgxl1.txt.gz">report</a> |
+      <a href="perf/perf-annotate-pgxl1.txt.gz">annotated source</a> |
+      <a href="perf/perf-trace-pgxl1.txt.gz">trace</a>
+  </li>
+  <li>pgxl2: <a href="perf/perf-report-pgxl2.txt.gz">report</a> |
+      <a href="perf/perf-annotate-pgxl2.txt.gz">annotated source</a> |
+      <a href="perf/perf-trace-pgxl2.txt.gz">trace</a>
+  </li>
+</ul>
+</p>
+
+<h2>Database Details</h2>
+<ul>
+  <li><a href="gtm.log">GTM</a></li>
+  <li><a href="coordinator">Coordinator</a></li>
+  <li>
+    <a href="gtm_proxy_1.log">GTM Proxy 1</a>
+    <a href="gtm_proxy_2.log">GTM Proxy 2</a>
+  </li>
+  <li>
+    <a href="datanode_1.log">Datanode 1</a>
+    <a href="datanode_2.log">Datanode 2</a>
+  </li>
+</ul>
+<h2>Charts</h2>
+<table>
+  <tr>
+    <th></th>
+    <th>Processor</th>
+    <th>Block Devices</th>
+    <th>Memory</th>
+    <th>Swap</th>
+    <th>Netowrk Devices</th>
+  </tr>
+  <tr>
+    <td><b>pgxl</b></td>
+    <td><a href="pgxl-sar-cpu.html">.oOo.</a></td>
+    <td><a href="pgxl-sar-blockdev.html">.oOo.</a></td>
+    <td><a href="pgxl-sar-mem.html">.oOo.</a></td>
+    <td><a href="pgxl-sar-swap.html">.oOo.</a></td>
+    <td><a href="pgxl-sar-net.html">.oOo.</a></td>
+  </tr>
+  <tr>
+    <td><b>pgxl1</b></td>
+    <td><a href="pgxl1-sar-cpu.html">.oOo.</a></td>
+    <td><a href="pgxl1-sar-blockdev.html">.oOo.</a></td>
+    <td><a href="pgxl1-sar-mem.html">.oOo.</a></td>
+    <td><a href="pgxl1-sar-swap.html">.oOo.</a></td>
+    <td><a href="pgxl1-sar-net.html">.oOo.</a></td>
+  </tr>
+  <tr>
+    <td><b>pgxl2</b></td>
+    <td><a href="pgxl2-sar-cpu.html">.oOo.</a></td>
+    <td><a href="pgxl2-sar-blockdev.html">.oOo.</a></td>
+    <td><a href="pgxl2-sar-mem.html">.oOo.</a></td>
+    <td><a href="pgxl2-sar-swap.html">.oOo.</a></td>
+    <td><a href="pgxl2-sar-net.html">.oOo.</a></td>
+  </tr>
+</table>
+
+<h3>Database</h3>
+<ul>
+  <li><a href="db/coordinator/db.html">coordinator</a></li>
+  <li><a href="db/datanode.1.1/db.html">datanode.1.1</a></li>
+  <li><a href="db/datanode.2.1/db.html">datanode.2.1</a></li>
+</ul>
+
+<h3>Tables</h3>
+<table>
+  <tr>
+    <th></th>
+    <th>coordinator</th>
+    <th>datanode.1.1</th>
+    <th>datanode.2.1</th>
+  </tr>
+  <tr>
+    <td><b>customer</b></td>
+    <td><a href="db/coordinator/tables/customer-charts.html">.oOo.</a></td>
+    <td><a href="db/datanode.1.1/tables/customer-charts.html">.oOo.</a></td>
+    <td><a href="db/datanode.2.1/tables/customer-charts.html">.oOo.</a></td>
+  </tr>
+  <tr>
+    <td><b>lineitem</b></td>
+    <td><a href="db/coordinator/tables/lineitem-charts.html">.oOo.</a></td>
+    <td><a href="db/datanode.1.1/tables/lineitem-charts.html">.oOo.</a></td>
+    <td><a href="db/datanode.2.1/tables/lineitem-charts.html">.oOo.</a></td>
+  </tr>
+  <tr>
+    <td><b>nation</b></td>
+    <td><a href="db/coordinator/tables/nation-charts.html">.oOo.</a></td>
+    <td><a href="db/datanode.1.1/tables/nation-charts.html">.oOo.</a></td>
+    <td><a href="db/datanode.2.1/tables/nation-charts.html">.oOo.</a></td>
+  </tr>
+  <tr>
+    <td><b>orders</b></td>
+    <td><a href="db/coordinator/tables/orders-charts.html">.oOo.</a></td>
+    <td><a href="db/datanode.1.1/tables/orders-charts.html">.oOo.</a></td>
+    <td><a href="db/datanode.2.1/tables/orders-charts.html">.oOo.</a></td>
+  </tr>
+  <tr>
+    <td><b>part</b></td>
+    <td><a href="db/coordinator/tables/part-charts.html">.oOo.</a></td>
+    <td><a href="db/datanode.1.1/tables/part-charts.html">.oOo.</a></td>
+    <td><a href="db/datanode.2.1/tables/part-charts.html">.oOo.</a></td>
+  </tr>
+  <tr>
+    <td><b>partsupp</b></td>
+    <td><a href="db/coordinator/tables/partsupp-charts.html">.oOo.</a></td>
+    <td><a href="db/datanode.1.1/tables/partsupp-charts.html">.oOo.</a></td>
+    <td><a href="db/datanode.2.1/tables/partsupp-charts.html">.oOo.</a></td>
+  </tr>
+  <tr>
+    <td><b>region</b></td>
+    <td><a href="db/coordinator/tables/region-charts.html">.oOo.</a></td>
+    <td><a href="db/datanode.1.1/tables/region-charts.html">.oOo.</a></td>
+    <td><a href="db/datanode.2.1/tables/region-charts.html">.oOo.</a></td>
+  </tr>
+  <tr>
+    <td><b>supplier</b></td>
+    <td><a href="db/coordinator/tables/supplier-charts.html">.oOo.</a></td>
+    <td><a href="db/datanode.1.1/tables/supplier-charts.html">.oOo.</a></td>
+    <td><a href="db/datanode.2.1/tables/supplier-charts.html">.oOo.</a></td>
+  </tr>
+  <tr>
+    <td><b>time_statistics</b></td>
+    <td><a href="db/coordinator/tables/time_statistics-charts.html">.oOo.</a></td>
+    <td><a href="db/datanode.1.1/tables/time_statistics-charts.html">.oOo.</a></td>
+    <td><a href="db/datanode.2.1/tables/time_statistics-charts.html">.oOo.</a></td>
+  </tr>
+</table>
+
+<h3>Table Metrics</h3>
+<table>
+  <tr>
+    <th></th>
+    <th>coordinator</th>
+    <th>datanode.1.1</th>
+    <th>datanode.2.1</th>
+  </tr>
+  <tr>
+    <td><b>heap_blks_hit</b></td>
+    <td><a href="db/coordinator/tables/t_heap_blks_hit-charts.html">.oOo.</a></li>
+    <td><a href="db/datanode.1.1/tables/t_heap_blks_hit-charts.html">.oOo.</a></li>
+    <td><a href="db/datanode.2.1/tables/t_heap_blks_hit-charts.html">.oOo.</a></li>
+  </tr>
+  <tr>
+    <td><b>heap_blks_read</b></td>
+    <td><a href="db/coordinator/tables/t_heap_blks_read-charts.html">.oOo.</a></li>
+    <td><a href="db/datanode.1.1/tables/t_heap_blks_read-charts.html">.oOo.</a></li>
+    <td><a href="db/datanode.2.1/tables/t_heap_blks_read-charts.html">.oOo.</a></li>
+  </tr>
+  <tr>
+    <td><b>idx_blks_hit</b></td>
+    <td><a href="db/coordinator/tables/t_idx_blks_hit-charts.html">.oOo.</a></li>
+    <td><a href="db/datanode.1.1/tables/t_idx_blks_hit-charts.html">.oOo.</a></li>
+    <td><a href="db/datanode.2.1/tables/t_idx_blks_hit-charts.html">.oOo.</a></li>
+  </tr>
+  <tr>
+    <td><b>idx_blks_read</b></td>
+    <td><a href="db/coordinator/tables/t_idx_blks_read-charts.html">.oOo.</a></li>
+    <td><a href="db/datanode.1.1/tables/t_idx_blks_read-charts.html">.oOo.</a></li>
+    <td><a href="db/datanode.2.1/tables/t_idx_blks_read-charts.html">.oOo.</a></li>
+  </tr>
+  <tr>
+    <td><b>idx_scan</b></td>
+    <td><a href="db/coordinator/tables/t_idx_scan-charts.html">.oOo.</a></li>
+    <td><a href="db/datanode.1.1/tables/t_idx_scan-charts.html">.oOo.</a></li>
+    <td><a href="db/datanode.2.1/tables/t_idx_scan-charts.html">.oOo.</a></li>
+  </tr>
+  <tr>
+    <td><b>idx_tup_fetch</b></td>
+    <td><a href="db/coordinator/tables/t_idx_tup_fetch-charts.html">.oOo.</a></li>
+    <td><a href="db/datanode.1.1/tables/t_idx_tup_fetch-charts.html">.oOo.</a></li>
+    <td><a href="db/datanode.2.1/tables/t_idx_tup_fetch-charts.html">.oOo.</a></li>
+  </tr>
+  <tr>
+    <td><b>n_dead_tup</b></td>
+    <td><a href="db/coordinator/tables/t_n_dead_tup-charts.html">.oOo.</a></li>
+    <td><a href="db/datanode.1.1/tables/t_n_dead_tup-charts.html">.oOo.</a></li>
+    <td><a href="db/datanode.2.1/tables/t_n_dead_tup-charts.html">.oOo.</a></li>
+  </tr>
+  <tr>
+    <td><b>n_live_tup</b></td>
+    <td><a href="db/coordinator/tables/t_n_live_tup-charts.html">.oOo.</a></li>
+    <td><a href="db/datanode.1.1/tables/t_n_live_tup-charts.html">.oOo.</a></li>
+    <td><a href="db/datanode.2.1/tables/t_n_live_tup-charts.html">.oOo.</a></li>
+  </tr>
+  <tr>
+    <td><b>n_tup_del</b></td>
+    <td><a href="db/coordinator/tables/t_n_tup_del-charts.html">.oOo.</a></li>
+    <td><a href="db/datanode.1.1/tables/t_n_tup_del-charts.html">.oOo.</a></li>
+    <td><a href="db/datanode.2.1/tables/t_n_tup_del-charts.html">.oOo.</a></li>
+  </tr>
+  <tr>
+    <td><b>n_tup_hot_upd</b></td>
+    <td><a href="db/coordinator/tables/t_n_tup_hot_upd-charts.html">.oOo.</a></li>
+    <td><a href="db/datanode.1.1/tables/t_n_tup_hot_upd-charts.html">.oOo.</a></li>
+    <td><a href="db/datanode.2.1/tables/t_n_tup_hot_upd-charts.html">.oOo.</a></li>
+  </tr>
+  <tr>
+    <td><b>n_tup_ins</b></td>
+    <td><a href="db/coordinator/tables/t_n_tup_ins-charts.html">.oOo.</a></li>
+    <td><a href="db/datanode.1.1/tables/t_n_tup_ins-charts.html">.oOo.</a></li>
+    <td><a href="db/datanode.2.1/tables/t_n_tup_ins-charts.html">.oOo.</a></li>
+  </tr>
+  <tr>
+    <td><b>n_tup_upd</b></td>
+    <td><a href="db/coordinator/tables/t_n_tup_upd-charts.html">.oOo.</a></li>
+    <td><a href="db/datanode.1.1/tables/t_n_tup_upd-charts.html">.oOo.</a></li>
+    <td><a href="db/datanode.2.1/tables/t_n_tup_upd-charts.html">.oOo.</a></li>
+  </tr>
+  <tr>
+    <td><b>seq_scan</b></td>
+    <td><a href="db/coordinator/tables/t_seq_scan-charts.html">.oOo.</a></li>
+    <td><a href="db/datanode.1.1/tables/t_seq_scan-charts.html">.oOo.</a></li>
+    <td><a href="db/datanode.2.1/tables/t_seq_scan-charts.html">.oOo.</a></li>
+  </tr>
+  <tr>
+    <td><b>seq_tup_read</b></td>
+    <td><a href="db/coordinator/tables/t_seq_tup_read-charts.html">.oOo.</a></li>
+    <td><a href="db/datanode.1.1/tables/t_seq_tup_read-charts.html">.oOo.</a></li>
+    <td><a href="db/datanode.2.1/tables/t_seq_tup_read-charts.html">.oOo.</a></li>
+  </tr>
+  <tr>
+    <td><b>toast_blks_read</b></td>
+    <td><a href="db/coordinator/tables/t_toast_blks_read-charts.html">.oOo.</a></li>
+    <td><a href="db/datanode.1.1/tables/t_toast_blks_read-charts.html">.oOo.</a></li>
+    <td><a href="db/datanode.2.1/tables/t_toast_blks_read-charts.html">.oOo.</a></li>
+  </tr>
+</table>
+
+<h3>Indexes</h3>
+<table>
+  <tr>
+    <th></th>
+    <th>coordinator</th>
+    <th>datanode.1.1</th>
+    <th>datanode.2.1</th>
+</table>
+<h3>Index Metrics</h3>
+<table>
+  <tr>
+    <th></th>
+    <th>coordinator</th>
+    <th>datanode.1.1</th>
+    <th>datanode.2.1</th>
+  </tr>
+</table>
+</body>
+</html>

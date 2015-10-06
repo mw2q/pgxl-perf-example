@@ -1,0 +1,565 @@
+2015-10-06 12:25:12 EDT [967]: [1-1] user=,db=,app=,client= LOG:  database system was shut down at 2015-10-06 12:24:56 EDT
+2015-10-06 12:25:12 EDT [967]: [2-1] user=,db=,app=,client= LOG:  MultiXact member wraparound protections are now enabled
+2015-10-06 12:25:12 EDT [966]: [1-1] user=,db=,app=,client= LOG:  database system is ready to accept connections
+2015-10-06 12:25:12 EDT [972]: [1-1] user=,db=,app=,client= LOG:  autovacuum launcher started
+2015-10-06 12:25:42 EDT [1446]: [1-1] user=,db=,app=,client= LOG:  Getting relation statistics for public.time_statistics
+2015-10-06 12:25:43 EDT [1446]: [2-1] user=,db=,app=,client= LOG:  Getting detailed statistics for public.time_statistics
+2015-10-06 12:25:45 EDT [1414]: [1-1] user=mark,db=dbt3,app=psql,client=[local] ERROR:  canceling statement due to statement timeout
+2015-10-06 12:25:45 EDT [1414]: [2-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		s_name,
+		count(*) as numwait
+	from
+		supplier,
+		lineitem l1,
+		orders,
+		nation
+	where
+		s_suppkey = l1.l_suppkey
+		and o_orderkey = l1.l_orderkey
+		and o_orderstatus = 'F'
+		and l1.l_receiptdate > l1.l_commitdate
+		and exists (
+			select
+				*
+			from
+				lineitem l2
+			where
+				l2.l_orderkey = l1.l_orderkey
+				and l2.l_suppkey <> l1.l_suppkey
+		)
+		and not exists (
+			select
+				*
+			from
+				lineitem l3
+			where
+				l3.l_orderkey = l1.l_orderkey
+				and l3.l_suppkey <> l1.l_suppkey
+				and l3.l_receiptdate > l3.l_commitdate
+		)
+		and s_nationkey = n_nationkey
+		and n_name = 'CANADA'
+	group by
+		s_name
+	order by
+		numwait desc,
+		s_name
+	LIMIT 100;
+2015-10-06 12:25:45 EDT [1414]: [3-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  Connection error canceling statement due to statement timeout
+2015-10-06 12:25:45 EDT [1414]: [4-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  Connection error canceling statement due to statement timeout
+2015-10-06 12:25:45 EDT [1414]: [5-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  Connection error failed to send ROLLBACK TRANSACTION command
+2015-10-06 12:25:45 EDT [1414]: [6-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  Connection error failed to send ROLLBACK TRANSACTION command
+2015-10-06 12:25:51 EDT [1422]: [1-1] user=mark,db=dbt3,app=psql,client=[local] ERROR:  canceling statement due to statement timeout
+2015-10-06 12:25:51 EDT [1422]: [2-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  COPY lineitem
+	FROM '/tmp/dbt3/dss/lineitem.tbl.u3'
+	USING DELIMITERS '|';
+2015-10-06 12:25:51 EDT [1422]: [3-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  Connection error canceling statement due to statement timeout
+2015-10-06 12:25:51 EDT [1422]: [4-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  Connection error canceling statement due to statement timeout
+2015-10-06 12:25:53 EDT [1497]: [1-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  Getting relation statistics for pg_temp_4.tmp_orderkey3
+2015-10-06 12:25:53 EDT [1497]: [2-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  ANALYZE tmp_orderkey3;
+2015-10-06 12:25:53 EDT [1497]: [3-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  Getting detailed statistics for pg_temp_4.tmp_orderkey3
+2015-10-06 12:25:53 EDT [1497]: [4-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  ANALYZE tmp_orderkey3;
+2015-10-06 12:26:15 EDT [1478]: [1-1] user=mark,db=dbt3,app=psql,client=[local] ERROR:  canceling statement due to statement timeout
+2015-10-06 12:26:15 EDT [1478]: [2-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		l_orderkey,
+		sum(l_extendedprice * (1 - l_discount)) as revenue,
+		o_orderdate,
+		o_shippriority
+	from
+		customer,
+		orders,
+		lineitem
+	where
+		c_mktsegment = 'BUILDING'
+		and c_custkey = o_custkey
+		and l_orderkey = o_orderkey
+		and o_orderdate < date '1995-03-30'
+		and l_shipdate > date '1995-03-30'
+	group by
+		l_orderkey,
+		o_orderdate,
+		o_shippriority
+	order by
+		revenue desc,
+		o_orderdate
+	LIMIT 10;
+2015-10-06 12:26:15 EDT [1478]: [3-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  Connection error failed to send ROLLBACK TRANSACTION command
+2015-10-06 12:26:15 EDT [1478]: [4-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  Connection error failed to send ROLLBACK TRANSACTION command
+2015-10-06 12:26:32 EDT [1546]: [1-1] user=mark,db=dbt3,app=psql,client=[local] ERROR:  canceling statement due to statement timeout
+2015-10-06 12:26:32 EDT [1546]: [2-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  COPY lineitem
+	FROM '/tmp/dbt3/dss/lineitem.tbl.u4'
+	USING DELIMITERS '|';
+2015-10-06 12:26:32 EDT [1546]: [3-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  Connection error canceling statement due to statement timeout
+2015-10-06 12:26:33 EDT [1651]: [1-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  Getting relation statistics for pg_temp_4.tmp_orderkey4
+2015-10-06 12:26:33 EDT [1651]: [2-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  ANALYZE tmp_orderkey4;
+2015-10-06 12:26:33 EDT [1651]: [3-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  Getting detailed statistics for pg_temp_4.tmp_orderkey4
+2015-10-06 12:26:33 EDT [1651]: [4-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  ANALYZE tmp_orderkey4;
+2015-10-06 12:26:48 EDT [1615]: [1-1] user=mark,db=dbt3,app=psql,client=[local] ERROR:  canceling statement due to statement timeout
+2015-10-06 12:26:48 EDT [1615]: [2-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		c_name,
+		c_custkey,
+		o_orderkey,
+		o_orderdate,
+		o_totalprice,
+		sum(l_quantity)
+	from
+		customer,
+		orders,
+		lineitem
+	where
+		o_orderkey in (
+			select
+				l_orderkey
+			from
+				lineitem
+			group by
+				l_orderkey having
+					sum(l_quantity) > 314
+		)
+		and c_custkey = o_custkey
+		and o_orderkey = l_orderkey
+	group by
+		c_name,
+		c_custkey,
+		o_orderkey,
+		o_orderdate,
+		o_totalprice
+	order by
+		o_totalprice desc,
+		o_orderdate
+	LIMIT 100;
+2015-10-06 12:26:48 EDT [1615]: [3-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  Connection error canceling statement due to statement timeout
+2015-10-06 12:26:48 EDT [1615]: [4-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  Connection error canceling statement due to statement timeout
+2015-10-06 12:26:48 EDT [1615]: [5-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  Connection error failed to send ROLLBACK TRANSACTION command
+2015-10-06 12:26:48 EDT [1615]: [6-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  Connection error failed to send ROLLBACK TRANSACTION command
+2015-10-06 12:26:56 EDT [1632]: [1-1] user=mark,db=dbt3,app=psql,client=[local] ERROR:  canceling statement due to statement timeout
+2015-10-06 12:26:56 EDT [1632]: [2-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		c_custkey,
+		c_name,
+		sum(l_extendedprice * (1 - l_discount)) as revenue,
+		c_acctbal,
+		n_name,
+		c_address,
+		c_phone,
+		c_comment
+	from
+		customer,
+		orders,
+		lineitem,
+		nation
+	where
+		c_custkey = o_custkey
+		and l_orderkey = o_orderkey
+		and o_orderdate >= date '1994-05-01'
+		and o_orderdate < cast(date '1994-05-01' + interval '3 month' as date)
+		and l_returnflag = 'R'
+		and c_nationkey = n_nationkey
+	group by
+		c_custkey,
+		c_name,
+		c_acctbal,
+		c_phone,
+		n_name,
+		c_address,
+		c_comment
+	order by
+		revenue desc
+	LIMIT 20;
+2015-10-06 12:26:56 EDT [1632]: [3-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  Connection error canceling statement due to statement timeout
+2015-10-06 12:26:56 EDT [1632]: [4-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  Connection error canceling statement due to statement timeout
+2015-10-06 12:26:56 EDT [1632]: [5-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  Connection error failed to send ROLLBACK TRANSACTION command
+2015-10-06 12:26:56 EDT [1632]: [6-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  Connection error failed to send ROLLBACK TRANSACTION command
+2015-10-06 12:27:28 EDT [1700]: [1-1] user=mark,db=dbt3,app=psql,client=[local] ERROR:  canceling statement due to statement timeout
+2015-10-06 12:27:28 EDT [1700]: [2-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		nation,
+		o_year,
+		sum(amount) as sum_profit
+	from
+		(
+			select
+				n_name as nation,
+				extract(year from o_orderdate) as o_year,
+				l_extendedprice * (1 - l_discount) - ps_supplycost * l_quantity as amount
+			from
+				part,
+				supplier,
+				lineitem,
+				partsupp,
+				orders,
+				nation
+			where
+				s_suppkey = l_suppkey
+				and ps_suppkey = l_suppkey
+				and ps_partkey = l_partkey
+				and p_partkey = l_partkey
+				and o_orderkey = l_orderkey
+				and s_nationkey = n_nationkey
+				and p_name like '%ghost%'
+		) as profit
+	group by
+		nation,
+		o_year
+	order by
+		nation,
+		o_year desc;
+2015-10-06 12:27:28 EDT [1700]: [3-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  Connection error canceling statement due to statement timeout
+2015-10-06 12:27:28 EDT [1700]: [4-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  Connection error canceling statement due to statement timeout
+2015-10-06 12:27:28 EDT [1700]: [5-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  Connection error failed to send ROLLBACK TRANSACTION command
+2015-10-06 12:27:28 EDT [1700]: [6-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  Connection error failed to send ROLLBACK TRANSACTION command
+2015-10-06 12:27:54 EDT [1769]: [1-1] user=mark,db=dbt3,app=psql,client=[local] ERROR:  canceling statement due to statement timeout
+2015-10-06 12:27:54 EDT [1769]: [2-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		supp_nation,
+		cust_nation,
+		l_year,
+		sum(volume) as revenue
+	from
+		(
+			select
+				n1.n_name as supp_nation,
+				n2.n_name as cust_nation,
+				extract(year from l_shipdate) as l_year,
+				l_extendedprice * (1 - l_discount) as volume
+			from
+				supplier,
+				lineitem,
+				orders,
+				customer,
+				nation n1,
+				nation n2
+			where
+				s_suppkey = l_suppkey
+				and o_orderkey = l_orderkey
+				and c_custkey = o_custkey
+				and s_nationkey = n1.n_nationkey
+				and c_nationkey = n2.n_nationkey
+				and (
+					(n1.n_name = 'JAPAN' and n2.n_name = 'IRAQ')
+					or (n1.n_name = 'IRAQ' and n2.n_name = 'JAPAN')
+				)
+				and l_shipdate between date '1995-01-01' and date '1996-12-31'
+		) as shipping
+	group by
+		supp_nation,
+		cust_nation,
+		l_year
+	order by
+		supp_nation,
+		cust_nation,
+		l_year;
+2015-10-06 12:27:54 EDT [1769]: [3-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  Connection error canceling statement due to statement timeout
+2015-10-06 12:27:54 EDT [1769]: [4-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  Connection error canceling statement due to statement timeout
+2015-10-06 12:27:54 EDT [1769]: [5-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  Connection error failed to send ROLLBACK TRANSACTION command
+2015-10-06 12:27:54 EDT [1769]: [6-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  Connection error failed to send ROLLBACK TRANSACTION command
+2015-10-06 12:28:37 EDT [1841]: [1-1] user=mark,db=dbt3,app=psql,client=[local] ERROR:  canceling statement due to statement timeout
+2015-10-06 12:28:37 EDT [1841]: [2-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		s_name,
+		s_address
+	from
+		supplier,
+		nation
+	where
+		s_suppkey in (
+			select
+				ps_suppkey
+			from
+				partsupp
+			where
+				ps_partkey in (
+					select
+						p_partkey
+					from
+						part
+					where
+						p_name like 'tan%'
+				)
+				and ps_availqty > (
+					select
+						0.5 * sum(l_quantity)
+					from
+						lineitem
+					where
+						l_partkey = ps_partkey
+						and l_suppkey = ps_suppkey
+						and l_shipdate >= '1993-01-01'
+						and l_shipdate < cast(date '1993-01-01' + interval '1 year' as date)
+				)
+		)
+		and s_nationkey = n_nationkey
+		and n_name = 'MOROCCO'
+	order by
+		s_name;
+2015-10-06 12:28:37 EDT [1841]: [3-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  Connection error canceling statement due to statement timeout
+2015-10-06 12:28:37 EDT [1841]: [4-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  Connection error canceling statement due to statement timeout
+2015-10-06 12:28:37 EDT [1841]: [5-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  Connection error failed to send ROLLBACK TRANSACTION command
+2015-10-06 12:28:37 EDT [1841]: [6-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  Connection error failed to send ROLLBACK TRANSACTION command
+2015-10-06 12:29:42 EDT [2089]: [1-1] user=,db=,app=,client= LOG:  Getting relation statistics for public.time_statistics
+2015-10-06 12:29:42 EDT [2089]: [2-1] user=,db=,app=,client= LOG:  Getting detailed statistics for public.time_statistics
+2015-10-06 12:29:52 EDT [2069]: [1-1] user=mark,db=dbt3,app=psql,client=[local] ERROR:  canceling statement due to statement timeout
+2015-10-06 12:29:52 EDT [2069]: [2-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		c_count,
+		count(*) as custdist
+	from
+		(
+			select
+				c_custkey,
+				count(o_orderkey)
+			from
+				customer left outer join orders on
+					c_custkey = o_custkey
+					and o_comment not like '%special%requests%'
+			group by
+				c_custkey
+		) as c_orders (c_custkey, c_count)
+	group by
+		c_count
+	order by
+		custdist desc,
+		c_count desc;
+2015-10-06 12:29:52 EDT [2069]: [3-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  Connection error canceling statement due to statement timeout
+2015-10-06 12:29:52 EDT [2069]: [4-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  Connection error canceling statement due to statement timeout
+2015-10-06 12:29:52 EDT [2069]: [5-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  Connection error canceling statement due to statement timeout
+2015-10-06 12:29:52 EDT [2069]: [6-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  Connection error failed to send ROLLBACK TRANSACTION command
+2015-10-06 12:29:52 EDT [2069]: [7-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  Connection error failed to send ROLLBACK TRANSACTION command
+2015-10-06 12:30:12 EDT [969]: [1-1] user=,db=,app=,client= LOG:  checkpoint starting: time
+2015-10-06 12:30:16 EDT [969]: [2-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 45 buffers (0.1%); 0 transaction log file(s) added, 0 removed, 0 recycled; write=4.414 s, sync=0.128 s, total=4.577 s; sync files=30, longest=0.009 s, average=0.004 s; distance=237 kB, estimate=237 kB
+2015-10-06 12:30:33 EDT [2131]: [1-1] user=mark,db=dbt3,app=psql,client=[local] ERROR:  canceling statement due to statement timeout
+2015-10-06 12:30:33 EDT [2131]: [2-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		c_count,
+		count(*) as custdist
+	from
+		(
+			select
+				c_custkey,
+				count(o_orderkey)
+			from
+				customer left outer join orders on
+					c_custkey = o_custkey
+					and o_comment not like '%special%accounts%'
+			group by
+				c_custkey
+		) as c_orders (c_custkey, c_count)
+	group by
+		c_count
+	order by
+		custdist desc,
+		c_count desc;
+2015-10-06 12:30:33 EDT [2131]: [3-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  Connection error canceling statement due to statement timeout
+2015-10-06 12:30:34 EDT [2131]: [4-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  Connection error canceling statement due to statement timeout
+2015-10-06 12:30:34 EDT [2131]: [5-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  Connection error canceling statement due to statement timeout
+2015-10-06 12:30:34 EDT [2131]: [6-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  Connection error failed to send ROLLBACK TRANSACTION command
+2015-10-06 12:30:34 EDT [2131]: [7-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  Connection error failed to send ROLLBACK TRANSACTION command
+2015-10-06 12:31:05 EDT [2217]: [1-1] user=mark,db=dbt3,app=psql,client=[local] ERROR:  canceling statement due to statement timeout
+2015-10-06 12:31:05 EDT [2217]: [2-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		c_name,
+		c_custkey,
+		o_orderkey,
+		o_orderdate,
+		o_totalprice,
+		sum(l_quantity)
+	from
+		customer,
+		orders,
+		lineitem
+	where
+		o_orderkey in (
+			select
+				l_orderkey
+			from
+				lineitem
+			group by
+				l_orderkey having
+					sum(l_quantity) > 315
+		)
+		and c_custkey = o_custkey
+		and o_orderkey = l_orderkey
+	group by
+		c_name,
+		c_custkey,
+		o_orderkey,
+		o_orderdate,
+		o_totalprice
+	order by
+		o_totalprice desc,
+		o_orderdate
+	LIMIT 100;
+2015-10-06 12:31:05 EDT [2217]: [3-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  Connection error failed to send ROLLBACK TRANSACTION command
+2015-10-06 12:31:05 EDT [2217]: [4-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  Connection error failed to send ROLLBACK TRANSACTION command
+2015-10-06 12:31:35 EDT [2272]: [1-1] user=mark,db=dbt3,app=psql,client=[local] ERROR:  canceling statement due to statement timeout
+2015-10-06 12:31:35 EDT [2272]: [2-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		nation,
+		o_year,
+		sum(amount) as sum_profit
+	from
+		(
+			select
+				n_name as nation,
+				extract(year from o_orderdate) as o_year,
+				l_extendedprice * (1 - l_discount) - ps_supplycost * l_quantity as amount
+			from
+				part,
+				supplier,
+				lineitem,
+				partsupp,
+				orders,
+				nation
+			where
+				s_suppkey = l_suppkey
+				and ps_suppkey = l_suppkey
+				and ps_partkey = l_partkey
+				and p_partkey = l_partkey
+				and o_orderkey = l_orderkey
+				and s_nationkey = n_nationkey
+				and p_name like '%indian%'
+		) as profit
+	group by
+		nation,
+		o_year
+	order by
+		nation,
+		o_year desc;
+2015-10-06 12:31:35 EDT [2272]: [3-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  Connection error failed to send ROLLBACK TRANSACTION command
+2015-10-06 12:31:35 EDT [2272]: [4-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  Connection error failed to send ROLLBACK TRANSACTION command
+2015-10-06 12:31:36 EDT [2289]: [1-1] user=mark,db=dbt3,app=psql,client=[local] ERROR:  canceling statement due to statement timeout
+2015-10-06 12:31:36 EDT [2289]: [2-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		l_returnflag,
+		l_linestatus,
+		sum(l_quantity) as sum_qty,
+		sum(l_extendedprice) as sum_base_price,
+		sum(l_extendedprice * (1 - l_discount)) as sum_disc_price,
+		sum(l_extendedprice * (1 - l_discount) * (1 + l_tax)) as sum_charge,
+		avg(l_quantity) as avg_qty,
+		avg(l_extendedprice) as avg_price,
+		avg(l_discount) as avg_disc,
+		count(*) as count_order
+	from
+		lineitem
+	where
+		l_shipdate <= date '1998-12-01' - interval '108 days'
+	group by
+		l_returnflag,
+		l_linestatus
+	order by
+		l_returnflag,
+		l_linestatus;
+2015-10-06 12:31:36 EDT [2289]: [3-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  Connection error failed to send ROLLBACK TRANSACTION command
+2015-10-06 12:31:36 EDT [2289]: [4-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  Connection error failed to send ROLLBACK TRANSACTION command
+2015-10-06 12:32:25 EDT [2378]: [1-1] user=mark,db=dbt3,app=psql,client=[local] ERROR:  canceling statement due to statement timeout
+2015-10-06 12:32:25 EDT [2378]: [2-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		s_name,
+		s_address
+	from
+		supplier,
+		nation
+	where
+		s_suppkey in (
+			select
+				ps_suppkey
+			from
+				partsupp
+			where
+				ps_partkey in (
+					select
+						p_partkey
+					from
+						part
+					where
+						p_name like 'gainsboro%'
+				)
+				and ps_availqty > (
+					select
+						0.5 * sum(l_quantity)
+					from
+						lineitem
+					where
+						l_partkey = ps_partkey
+						and l_suppkey = ps_suppkey
+						and l_shipdate >= '1997-01-01'
+						and l_shipdate < cast(date '1997-01-01' + interval '1 year' as date)
+				)
+		)
+		and s_nationkey = n_nationkey
+		and n_name = 'ETHIOPIA'
+	order by
+		s_name;
+2015-10-06 12:32:25 EDT [2378]: [3-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  Connection error canceling statement due to statement timeout
+2015-10-06 12:32:25 EDT [2378]: [4-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  Connection error canceling statement due to statement timeout
+2015-10-06 12:32:25 EDT [2378]: [5-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  Connection error failed to send ROLLBACK TRANSACTION command
+2015-10-06 12:32:25 EDT [2378]: [6-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  Connection error failed to send ROLLBACK TRANSACTION command
+2015-10-06 12:32:37 EDT [2395]: [1-1] user=mark,db=dbt3,app=psql,client=[local] ERROR:  canceling statement due to statement timeout
+2015-10-06 12:32:37 EDT [2395]: [2-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		l_returnflag,
+		l_linestatus,
+		sum(l_quantity) as sum_qty,
+		sum(l_extendedprice) as sum_base_price,
+		sum(l_extendedprice * (1 - l_discount)) as sum_disc_price,
+		sum(l_extendedprice * (1 - l_discount) * (1 + l_tax)) as sum_charge,
+		avg(l_quantity) as avg_qty,
+		avg(l_extendedprice) as avg_price,
+		avg(l_discount) as avg_disc,
+		count(*) as count_order
+	from
+		lineitem
+	where
+		l_shipdate <= date '1998-12-01' - interval '100 days'
+	group by
+		l_returnflag,
+		l_linestatus
+	order by
+		l_returnflag,
+		l_linestatus;
+2015-10-06 12:32:37 EDT [2395]: [3-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  Connection error canceling statement due to statement timeout
+2015-10-06 12:32:37 EDT [2395]: [4-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  Connection error canceling statement due to statement timeout
+2015-10-06 12:32:37 EDT [2395]: [5-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  Connection error failed to send ROLLBACK TRANSACTION command
+2015-10-06 12:32:37 EDT [2395]: [6-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  Connection error failed to send ROLLBACK TRANSACTION command
+2015-10-06 12:33:29 EDT [2510]: [1-1] user=mark,db=dbt3,app=psql,client=[local] ERROR:  canceling statement due to statement timeout
+2015-10-06 12:33:29 EDT [2510]: [2-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		s_name,
+		count(*) as numwait
+	from
+		supplier,
+		lineitem l1,
+		orders,
+		nation
+	where
+		s_suppkey = l1.l_suppkey
+		and o_orderkey = l1.l_orderkey
+		and o_orderstatus = 'F'
+		and l1.l_receiptdate > l1.l_commitdate
+		and exists (
+			select
+				*
+			from
+				lineitem l2
+			where
+				l2.l_orderkey = l1.l_orderkey
+				and l2.l_suppkey <> l1.l_suppkey
+		)
+		and not exists (
+			select
+				*
+			from
+				lineitem l3
+			where
+				l3.l_orderkey = l1.l_orderkey
+				and l3.l_suppkey <> l1.l_suppkey
+				and l3.l_receiptdate > l3.l_commitdate
+		)
+		and s_nationkey = n_nationkey
+		and n_name = 'SAUDI ARABIA'
+	group by
+		s_name
+	order by
+		numwait desc,
+		s_name
+	LIMIT 100;
+2015-10-06 12:33:29 EDT [2510]: [3-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  Connection error canceling statement due to statement timeout
+2015-10-06 12:33:29 EDT [2510]: [4-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  Connection error canceling statement due to statement timeout
+2015-10-06 12:33:29 EDT [2510]: [5-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  Connection error failed to send ROLLBACK TRANSACTION command
+2015-10-06 12:33:29 EDT [2510]: [6-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  Connection error failed to send ROLLBACK TRANSACTION command
+2015-10-06 12:33:33 EDT [966]: [2-1] user=,db=,app=,client= LOG:  received fast shutdown request
+2015-10-06 12:33:33 EDT [966]: [3-1] user=,db=,app=,client= LOG:  aborting any active transactions
+2015-10-06 12:33:33 EDT [972]: [2-1] user=,db=,app=,client= LOG:  autovacuum launcher shutting down
+2015-10-06 12:33:33 EDT [969]: [3-1] user=,db=,app=,client= LOG:  shutting down
+2015-10-06 12:33:33 EDT [969]: [4-1] user=,db=,app=,client= LOG:  checkpoint starting: shutdown immediate
+2015-10-06 12:33:33 EDT [969]: [5-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 0 buffers (0.0%); 0 transaction log file(s) added, 0 removed, 0 recycled; write=0.000 s, sync=0.000 s, total=0.048 s; sync files=0, longest=0.000 s, average=0.000 s; distance=6 kB, estimate=213 kB
+2015-10-06 12:33:33 EDT [969]: [6-1] user=,db=,app=,client= LOG:  database system is shut down

@@ -1,0 +1,117 @@
+WARNING: The /tmp/pgxl-perf-example/load/perf/perf-pgxl1.data file's data size field is 0 which is unexpected.
+Was the 'perf record' command properly terminated?
+WARNING: The /tmp/pgxl-perf-example/load/perf/perf-pgxl1.data file's data size field is 0 which is unexpected.
+Was the 'perf record' command properly terminated?
+WARNING: The /tmp/pgxl-perf-example/load/perf/perf-pgxl1.data file's data size field is 0 which is unexpected.
+Was the 'perf record' command properly terminated?
+Failed to open [nf_nat], continuing without symbols
+Failed to open [nf_conntrack], continuing without symbols
+Failed to open [iptable_nat], continuing without symbols
+Failed to open [bridge], continuing without symbols
+Failed to open [i915], continuing without symbols
+Failed to open [snd], continuing without symbols
+Failed to open [wl], continuing without symbols
+Failed to open [ip_tables], continuing without symbols
+Failed to open [ebtables], continuing without symbols
+Failed to open [snd_hda_intel], continuing without symbols
+Failed to open [libahci], continuing without symbols
+Failed to open [iptable_mangle], continuing without symbols
+Failed to open [veth], continuing without symbols
+Failed to open [snd_pcm], continuing without symbols
+Failed to open [iptable_filter], continuing without symbols
+Failed to open [nf_conntrack_ipv4], continuing without symbols
+Failed to open [tg3], continuing without symbols
+Failed to open [nf_defrag_ipv4], continuing without symbols
+Failed to open [kvm], continuing without symbols
+Failed to open [nf_nat], continuing without symbols
+Failed to open [iptable_nat], continuing without symbols
+Failed to open [ebtable_filter], continuing without symbols
+Failed to open [bridge], continuing without symbols
+Failed to open [nf_conntrack], continuing without symbols
+Failed to open [nf_conntrack_ipv4], continuing without symbols
+Failed to open [i915], continuing without symbols
+Failed to open /tmp/perf-0.map, continuing without symbols
+Failed to open [snd], continuing without symbols
+Failed to open [wl], continuing without symbols
+Failed to open [ip_tables], continuing without symbols
+Failed to open [iptable_filter], continuing without symbols
+Failed to open [ebtables], continuing without symbols
+Failed to open /lib/x86_64-linux-gnu/libc-2.21.so, continuing without symbols
+Failed to open /usr/lib/git-core/git, continuing without symbols
+Failed to open [snd_hda_intel], continuing without symbols
+Failed to open [snd_hda_controller], continuing without symbols
+Failed to open [snd_pcm], continuing without symbols
+Failed to open [libahci], continuing without symbols
+Failed to open [iptable_mangle], continuing without symbols
+Failed to open /lib/x86_64-linux-gnu/ld-2.21.so, continuing without symbols
+Failed to open [cfg80211], continuing without symbols
+Failed to open [ebtable_filter], continuing without symbols
+Failed to open [veth], continuing without symbols
+Failed to open [xfs], continuing without symbols
+Failed to open [drm], continuing without symbols
+Failed to open [nf_nat], continuing without symbols
+Failed to open [iptable_nat], continuing without symbols
+Failed to open [ebtable_filter], continuing without symbols
+Failed to open [bridge], continuing without symbols
+Failed to open [nf_conntrack], continuing without symbols
+Failed to open [nf_conntrack_ipv4], continuing without symbols
+Failed to open [i915], continuing without symbols
+Failed to open /tmp/perf-0.map, continuing without symbols
+Failed to open [snd_hda_controller], continuing without symbols
+Failed to open [snd], continuing without symbols
+Failed to open [wl], continuing without symbols
+Failed to open [ip_tables], continuing without symbols
+Failed to open [iptable_filter], continuing without symbols
+Failed to open [ebtables], continuing without symbols
+Failed to open [tg3], continuing without symbols
+Failed to open [snd_hda_intel], continuing without symbols
+Failed to open [snd_hda_controller], continuing without symbols
+Failed to open [snd_pcm], continuing without symbols
+Failed to open [libahci], continuing without symbols
+Failed to open [iptable_mangle], continuing without symbols
+Failed to open [cfg80211], continuing without symbols
+Failed to open [nf_defrag_ipv4], continuing without symbols
+Failed to open [veth], continuing without symbols
+Failed to open [xfs], continuing without symbols
+Failed to open [drm], continuing without symbols
+Failed to open [hid], continuing without symbols
+Failed to open [hid], continuing without symbols
+Failed to open [usbhid], continuing without symbols
+Failed to open [drm], continuing without symbols
+Failed to open [tg3], continuing without symbols
+Failed to open [kvm], continuing without symbols
+Failed to open [nf_defrag_ipv4], continuing without symbols
+Failed to open [hid], continuing without symbols
+Failed to open [usbhid], continuing without symbols
+Failed to open [x86_pkg_temp_thermal], continuing without symbols
+Failed to open /lib/x86_64-linux-gnu/libc-2.21.so, continuing without symbols
+Failed to open /usr/lib/git-core/git, continuing without symbols
+Failed to open /tmp/perf-0.map, continuing without symbols
+Failed to open [usb_storage], continuing without symbols
+Failed to open /lib/x86_64-linux-gnu/ld-2.21.so, continuing without symbols
+Failed to open [kvm], continuing without symbols
+Failed to open [hid_apple], continuing without symbols
+Failed to open [x86_pkg_temp_thermal], continuing without symbols
+Failed to open /lib/x86_64-linux-gnu/libc-2.21.so, continuing without symbols
+Failed to open /usr/lib/git-core/git, continuing without symbols
+Failed to open [usb_storage], continuing without symbols
+Failed to open /lib/x86_64-linux-gnu/ld-2.21.so, continuing without symbols
+Failed to open /lib64/libc-2.20.so, continuing without symbols
+Failed to open [hid_apple], continuing without symbols
+Failed to open /lib64/libc-2.20.so, continuing without symbols
+Failed to open /bin/route, continuing without symbols
+Failed to open [hid_apple], continuing without symbols
+Failed to open /lib64/libc-2.20.so, continuing without symbols
+Failed to open /bin/route, continuing without symbols
+Can't annotate copy_user_enhanced_fast_string:
+
+No vmlinux file
+was found in the path.
+
+Please use:
+
+  perf buildid-cache -vu vmlinux
+
+or:
+
+  --vmlinux vmlinux

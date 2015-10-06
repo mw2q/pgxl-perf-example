@@ -1,0 +1,48 @@
+BEGIN;
+BEGIN
+EXPLAIN
+select
+	c_count,
+	count(*) as custdist
+from
+	(
+		select
+			c_custkey,
+			count(o_orderkey)
+		from
+			customer left outer join orders on
+				c_custkey = o_custkey
+				and o_comment not like '%special%accounts%'
+		group by
+			c_custkey
+	) as c_orders (c_custkey, c_count)
+group by
+	c_count
+order by
+	custdist desc,
+	c_count desc;
+                                                                 QUERY PLAN                                                                  
+---------------------------------------------------------------------------------------------------------------------------------------------
+ Sort  (cost=827572.44..827572.94 rows=200 width=8)
+   Sort Key: (pg_catalog.count(*)) DESC, c_count DESC
+   ->  HashAggregate  (cost=827562.79..827564.79 rows=200 width=8)
+         Group Key: c_count
+         ->  Remote Subquery Scan on all (datanode_1_1,datanode_2_1)  (cost=790062.79..820062.79 rows=1500000 width=8)
+               ->  HashAggregate  (cost=790062.79..820062.79 rows=200 width=8)
+                     Group Key: count(orders.o_orderkey)
+                     ->  HashAggregate  (cost=790062.79..805062.79 rows=1500000 width=8)
+                           Group Key: customer.c_custkey
+                           ->  Hash Right Join  (cost=69027.00..721390.06 rows=13734546 width=8)
+                                 Hash Cond: (orders.o_custkey = customer.c_custkey)
+                                 ->  Remote Subquery Scan on all (datanode_1_1,datanode_2_1)  (cost=100.00..633905.97 rows=14848546 width=8)
+                                       Distribute results by H: o_custkey
+                                       ->  Seq Scan on orders  (cost=0.00..440774.88 rows=14848546 width=8)
+                                             Filter: ((o_comment)::text !~~ '%special%accounts%'::text)
+                                 ->  Hash  (cost=63877.00..63877.00 rows=1500000 width=4)
+                                       ->  Remote Subquery Scan on all (datanode_2_1)  (cost=100.00..63877.00 rows=1500000 width=4)
+                                             Distribute results by H: c_custkey
+                                             ->  Seq Scan on customer  (cost=0.00..50277.00 rows=1500000 width=4)
+(19 rows)
+
+COMMIT;
+COMMIT

@@ -1,0 +1,44 @@
+BEGIN;
+BEGIN
+EXPLAIN
+select
+	o_orderpriority,
+	count(*) as order_count
+from
+	orders
+where
+	o_orderdate >= date '1995-01-01'
+	and o_orderdate < cast(date '1995-01-01' + interval '3 month' as date)
+	and exists (
+		select
+			*
+		from
+			lineitem
+		where
+			l_orderkey = o_orderkey
+			and l_commitdate < l_receiptdate
+	)
+group by
+	o_orderpriority
+order by
+	o_orderpriority;
+                                                              QUERY PLAN                                                               
+---------------------------------------------------------------------------------------------------------------------------------------
+ Sort  (cost=1487862.51..1487862.51 rows=1 width=16)
+   Sort Key: orders.o_orderpriority
+   ->  HashAggregate  (cost=1487862.49..1487862.50 rows=1 width=16)
+         Group Key: orders.o_orderpriority
+         ->  Remote Subquery Scan on all (datanode_1_1,datanode_2_1)  (cost=12487.01..1487777.62 rows=16974 width=16)
+               ->  HashAggregate  (cost=12487.01..1487777.62 rows=1 width=16)
+                     Group Key: orders.o_orderpriority
+                     ->  Nested Loop Semi Join  (cost=12487.01..1487777.62 rows=16974 width=16)
+                           ->  Bitmap Heap Scan on orders  (cost=12486.89..274587.30 rows=588361 width=20)
+                                 Recheck Cond: ((o_orderdate >= '1995-01-01'::date) AND (o_orderdate < '1995-04-01'::date))
+                                 ->  Bitmap Index Scan on orders_o_orderdate_o_orderkey_idx  (cost=0.00..12339.80 rows=588361 width=0)
+                                       Index Cond: ((o_orderdate >= '1995-01-01'::date) AND (o_orderdate < '1995-04-01'::date))
+                           ->  Index Scan using lineitem_l_orderkey_idx_part1 on lineitem  (cost=0.12..86.83 rows=46 width=4)
+                                 Index Cond: (l_orderkey = orders.o_orderkey)
+(14 rows)
+
+COMMIT;
+COMMIT

@@ -1,0 +1,4 @@
+1:140289203152640:2015-10-06 12:34:21.594 EDT -LOG:  Starting GTM proxy at (*:6666)
+LOCATION:  main, proxy_main.c:813
+1:140289192830720:2015-10-06 12:34:27.053 EDT -LOG:  unexpected EOF on client connection
+LOCATION:  ReadCommand, proxy_main.c:2074

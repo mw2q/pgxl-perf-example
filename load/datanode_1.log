@@ -1,0 +1,111 @@
+2015-10-06 12:02:10 EDT [7161]: [1-1] user=,db=,app=,client= LOG:  database system was shut down at 2015-10-06 12:02:08 EDT
+2015-10-06 12:02:10 EDT [7161]: [2-1] user=,db=,app=,client= LOG:  MultiXact member wraparound protections are now enabled
+2015-10-06 12:02:10 EDT [7160]: [1-1] user=,db=,app=,client= LOG:  database system is ready to accept connections
+2015-10-06 12:02:10 EDT [7166]: [1-1] user=,db=,app=,client= LOG:  autovacuum launcher started
+2015-10-06 12:02:12 EDT [7169]: [1-1] user=mark,db=postgres,app=pgxc,client=10.0.3.115 LOG:  PGXC node coordinator: Applying default port value: 5432
+2015-10-06 12:02:12 EDT [7169]: [2-1] user=mark,db=postgres,app=pgxc,client=10.0.3.115 STATEMENT:  CREATE NODE coordinator WITH (TYPE = 'coordinator', HOST = 'pgxl')
+2015-10-06 12:02:12 EDT [7169]: [3-1] user=mark,db=postgres,app=pgxc,client=10.0.3.115 WARNING:  Expected to see a snapshot sent by the coordinator  - now taking a direct snapshot from GTM
+2015-10-06 12:02:15 EDT [7163]: [1-1] user=,db=,app=,client= LOG:  checkpoint starting: immediate force wait flush-all
+2015-10-06 12:02:21 EDT [7163]: [2-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 9 buffers (0.0%); 0 transaction log file(s) added, 0 removed, 0 recycled; write=0.595 s, sync=5.454 s, total=6.095 s; sync files=9, longest=1.175 s, average=0.606 s; distance=3 kB, estimate=3 kB
+2015-10-06 12:02:23 EDT [7163]: [3-1] user=,db=,app=,client= LOG:  checkpoint starting: immediate force wait
+2015-10-06 12:02:24 EDT [7163]: [4-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 0 buffers (0.0%); 0 transaction log file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.000 s, total=0.639 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=2 kB
+2015-10-06 12:03:16 EDT [7202]: [1-1] user=mark,db=dbt3,app=pgxc,client=10.0.3.115 LOG:  process 7202 still waiting for ExclusiveLock on extension of relation 16393 of database 16386 after 1000.059 ms
+2015-10-06 12:03:16 EDT [7202]: [2-1] user=mark,db=dbt3,app=pgxc,client=10.0.3.115 DETAIL:  Process holding the lock: 7180. Wait queue: 7202.
+2015-10-06 12:03:16 EDT [7202]: [3-1] user=mark,db=dbt3,app=pgxc,client=10.0.3.115 CONTEXT:  COPY partsupp, line 86201
+2015-10-06 12:03:16 EDT [7202]: [4-1] user=mark,db=dbt3,app=pgxc,client=10.0.3.115 STATEMENT:  COPY public.partsupp FROM STDIN DELIMITER AS '|'
+2015-10-06 12:03:16 EDT [7202]: [5-1] user=mark,db=dbt3,app=pgxc,client=10.0.3.115 LOG:  process 7202 acquired ExclusiveLock on extension of relation 16393 of database 16386 after 1411.960 ms
+2015-10-06 12:03:16 EDT [7202]: [6-1] user=mark,db=dbt3,app=pgxc,client=10.0.3.115 CONTEXT:  COPY partsupp, line 86201
+2015-10-06 12:03:16 EDT [7202]: [7-1] user=mark,db=dbt3,app=pgxc,client=10.0.3.115 STATEMENT:  COPY public.partsupp FROM STDIN DELIMITER AS '|'
+2015-10-06 12:03:29 EDT [7163]: [5-1] user=,db=,app=,client= LOG:  checkpoint starting: xlog
+2015-10-06 12:04:01 EDT [7180]: [1-1] user=mark,db=dbt3,app=pgxc,client=10.0.3.115 LOG:  process 7180 still waiting for ExclusiveLock on extension of relation 16393 of database 16386 after 1000.034 ms
+2015-10-06 12:04:01 EDT [7180]: [2-1] user=mark,db=dbt3,app=pgxc,client=10.0.3.115 DETAIL:  Process holding the lock: 7202. Wait queue: 7180.
+2015-10-06 12:04:01 EDT [7180]: [3-1] user=mark,db=dbt3,app=pgxc,client=10.0.3.115 CONTEXT:  COPY partsupp, line 483723
+2015-10-06 12:04:01 EDT [7180]: [4-1] user=mark,db=dbt3,app=pgxc,client=10.0.3.115 STATEMENT:  COPY public.partsupp FROM STDIN DELIMITER AS '|'
+2015-10-06 12:04:03 EDT [7180]: [5-1] user=mark,db=dbt3,app=pgxc,client=10.0.3.115 LOG:  process 7180 acquired ExclusiveLock on extension of relation 16393 of database 16386 after 2878.390 ms
+2015-10-06 12:04:03 EDT [7180]: [6-1] user=mark,db=dbt3,app=pgxc,client=10.0.3.115 CONTEXT:  COPY partsupp, line 483723
+2015-10-06 12:04:03 EDT [7180]: [7-1] user=mark,db=dbt3,app=pgxc,client=10.0.3.115 STATEMENT:  COPY public.partsupp FROM STDIN DELIMITER AS '|'
+2015-10-06 12:04:03 EDT [7163]: [6-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 12192 buffers (18.6%); 0 transaction log file(s) added, 0 removed, 0 recycled; write=4.354 s, sync=26.594 s, total=34.583 s; sync files=58, longest=2.539 s, average=0.458 s; distance=413942 kB, estimate=413942 kB
+2015-10-06 12:04:17 EDT [7163]: [7-1] user=,db=,app=,client= LOG:  checkpoint starting: xlog
+2015-10-06 12:04:41 EDT [7200]: [1-1] user=mark,db=dbt3,app=pgxc,client=10.0.3.115 LOG:  sending cancel to blocking autovacuum PID 7215
+2015-10-06 12:04:41 EDT [7200]: [2-1] user=mark,db=dbt3,app=pgxc,client=10.0.3.115 DETAIL:  Process 7200 waits for AccessExclusiveLock on relation 16396 of database 16386.
+2015-10-06 12:04:41 EDT [7200]: [3-1] user=mark,db=dbt3,app=pgxc,client=10.0.3.115 STATEMENT:  
+	ALTER TABLE customer
+	ADD CONSTRAINT pk_customer PRIMARY KEY (c_custkey);
+2015-10-06 12:04:41 EDT [7200]: [4-1] user=mark,db=dbt3,app=pgxc,client=10.0.3.115 LOG:  process 7200 still waiting for AccessExclusiveLock on relation 16396 of database 16386 after 1000.104 ms
+2015-10-06 12:04:41 EDT [7200]: [5-1] user=mark,db=dbt3,app=pgxc,client=10.0.3.115 DETAIL:  Process holding the lock: 7215. Wait queue: 7200.
+2015-10-06 12:04:41 EDT [7200]: [6-1] user=mark,db=dbt3,app=pgxc,client=10.0.3.115 STATEMENT:  
+	ALTER TABLE customer
+	ADD CONSTRAINT pk_customer PRIMARY KEY (c_custkey);
+2015-10-06 12:04:41 EDT [7215]: [1-1] user=,db=,app=,client= ERROR:  canceling autovacuum task
+2015-10-06 12:04:41 EDT [7215]: [2-1] user=,db=,app=,client= CONTEXT:  automatic analyze of table "dbt3.public.customer"
+2015-10-06 12:04:41 EDT [7200]: [7-1] user=mark,db=dbt3,app=pgxc,client=10.0.3.115 LOG:  process 7200 acquired AccessExclusiveLock on relation 16396 of database 16386 after 1000.192 ms
+2015-10-06 12:04:41 EDT [7200]: [8-1] user=mark,db=dbt3,app=pgxc,client=10.0.3.115 STATEMENT:  
+	ALTER TABLE customer
+	ADD CONSTRAINT pk_customer PRIMARY KEY (c_custkey);
+2015-10-06 12:04:54 EDT [7163]: [8-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 11781 buffers (18.0%); 0 transaction log file(s) added, 0 removed, 25 recycled; write=21.104 s, sync=15.231 s, total=37.702 s; sync files=26, longest=2.375 s, average=0.585 s; distance=399285 kB, estimate=412476 kB
+2015-10-06 12:05:17 EDT [7163]: [9-1] user=,db=,app=,client= LOG:  checkpoint starting: xlog
+2015-10-06 12:05:44 EDT [7163]: [10-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 6772 buffers (10.3%); 0 transaction log file(s) added, 0 removed, 25 recycled; write=3.472 s, sync=21.566 s, total=27.172 s; sync files=36, longest=2.340 s, average=0.599 s; distance=409382 kB, estimate=412167 kB
+2015-10-06 12:05:55 EDT [7163]: [11-1] user=,db=,app=,client= LOG:  checkpoint starting: xlog
+2015-10-06 12:06:14 EDT [7163]: [12-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 4934 buffers (7.5%); 0 transaction log file(s) added, 0 removed, 25 recycled; write=4.791 s, sync=11.051 s, total=19.096 s; sync files=6, longest=3.860 s, average=1.841 s; distance=409887 kB, estimate=411939 kB
+2015-10-06 12:06:41 EDT [7163]: [13-1] user=,db=,app=,client= LOG:  checkpoint starting: xlog
+2015-10-06 12:07:11 EDT [7163]: [14-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 5145 buffers (7.9%); 0 transaction log file(s) added, 0 removed, 25 recycled; write=6.365 s, sync=22.045 s, total=30.420 s; sync files=32, longest=2.625 s, average=0.688 s; distance=408458 kB, estimate=411591 kB
+2015-10-06 12:07:36 EDT [7163]: [15-1] user=,db=,app=,client= LOG:  checkpoint starting: xlog
+2015-10-06 12:08:04 EDT [7163]: [16-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 3972 buffers (6.1%); 0 transaction log file(s) added, 0 removed, 25 recycled; write=25.177 s, sync=2.067 s, total=27.292 s; sync files=4, longest=0.815 s, average=0.516 s; distance=410847 kB, estimate=411516 kB
+2015-10-06 12:08:32 EDT [7163]: [17-1] user=,db=,app=,client= LOG:  checkpoint starting: xlog
+2015-10-06 12:08:52 EDT [7163]: [18-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 1175 buffers (1.8%); 0 transaction log file(s) added, 0 removed, 25 recycled; write=2.561 s, sync=16.751 s, total=19.353 s; sync files=30, longest=1.795 s, average=0.558 s; distance=410828 kB, estimate=411448 kB
+2015-10-06 12:09:10 EDT [7163]: [19-1] user=,db=,app=,client= LOG:  checkpoint starting: xlog
+2015-10-06 12:09:20 EDT [7163]: [20-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 577 buffers (0.9%); 0 transaction log file(s) added, 0 removed, 25 recycled; write=5.467 s, sync=2.341 s, total=10.224 s; sync files=2, longest=1.198 s, average=1.170 s; distance=410881 kB, estimate=411391 kB
+2015-10-06 12:09:42 EDT [7163]: [21-1] user=,db=,app=,client= LOG:  checkpoint starting: xlog
+2015-10-06 12:09:51 EDT [7163]: [22-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 571 buffers (0.9%); 0 transaction log file(s) added, 0 removed, 25 recycled; write=2.151 s, sync=4.973 s, total=8.421 s; sync files=3, longest=2.233 s, average=1.657 s; distance=404777 kB, estimate=410729 kB
+2015-10-06 12:10:14 EDT [7163]: [23-1] user=,db=,app=,client= LOG:  checkpoint starting: xlog
+2015-10-06 12:10:19 EDT [7163]: [24-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 561 buffers (0.9%); 0 transaction log file(s) added, 0 removed, 25 recycled; write=2.268 s, sync=1.364 s, total=4.264 s; sync files=2, longest=0.733 s, average=0.682 s; distance=410479 kB, estimate=410704 kB
+2015-10-06 12:10:42 EDT [7163]: [25-1] user=,db=,app=,client= LOG:  checkpoints are occurring too frequently (28 seconds apart)
+2015-10-06 12:10:42 EDT [7163]: [26-1] user=,db=,app=,client= HINT:  Consider increasing the configuration parameter "max_wal_size".
+2015-10-06 12:10:42 EDT [7163]: [27-1] user=,db=,app=,client= LOG:  checkpoint starting: xlog
+2015-10-06 12:10:48 EDT [7163]: [28-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 609 buffers (0.9%); 0 transaction log file(s) added, 0 removed, 25 recycled; write=3.509 s, sync=3.188 s, total=6.731 s; sync files=3, longest=2.462 s, average=1.062 s; distance=411243 kB, estimate=411243 kB
+2015-10-06 12:11:11 EDT [7163]: [29-1] user=,db=,app=,client= LOG:  checkpoints are occurring too frequently (29 seconds apart)
+2015-10-06 12:11:11 EDT [7163]: [30-1] user=,db=,app=,client= HINT:  Consider increasing the configuration parameter "max_wal_size".
+2015-10-06 12:11:11 EDT [7163]: [31-1] user=,db=,app=,client= LOG:  checkpoint starting: xlog
+2015-10-06 12:11:15 EDT [7163]: [32-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 540 buffers (0.8%); 0 transaction log file(s) added, 0 removed, 25 recycled; write=2.474 s, sync=1.308 s, total=3.803 s; sync files=2, longest=0.689 s, average=0.654 s; distance=411218 kB, estimate=411241 kB
+2015-10-06 12:11:36 EDT [7163]: [33-1] user=,db=,app=,client= LOG:  checkpoints are occurring too frequently (25 seconds apart)
+2015-10-06 12:11:36 EDT [7163]: [34-1] user=,db=,app=,client= HINT:  Consider increasing the configuration parameter "max_wal_size".
+2015-10-06 12:11:36 EDT [7163]: [35-1] user=,db=,app=,client= LOG:  checkpoint starting: xlog
+2015-10-06 12:11:41 EDT [7163]: [36-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 527 buffers (0.8%); 0 transaction log file(s) added, 0 removed, 25 recycled; write=1.415 s, sync=2.095 s, total=5.383 s; sync files=2, longest=2.065 s, average=1.047 s; distance=406202 kB, estimate=410737 kB
+2015-10-06 12:13:22 EDT [7196]: [1-1] user=mark,db=dbt3,app=pgxc,client=10.0.3.115 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp7196.0", size 600203264
+2015-10-06 12:13:22 EDT [7196]: [2-1] user=mark,db=dbt3,app=pgxc,client=10.0.3.115 STATEMENT:  
+	CREATE INDEX lineitem_l_shipdate_l_suppkey__idx
+	ON lineitem (l_shipdate, l_suppkey);
+2015-10-06 12:13:58 EDT [7196]: [3-1] user=mark,db=dbt3,app=pgxc,client=10.0.3.115 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp7196.1", size 600195072
+2015-10-06 12:13:58 EDT [7196]: [4-1] user=mark,db=dbt3,app=pgxc,client=10.0.3.115 STATEMENT:  
+	ALTER TABLE lineitem
+	ADD CONSTRAINT pk_lineitem PRIMARY KEY (l_orderkey, l_linenumber);
+2015-10-06 12:15:43 EDT [7200]: [9-1] user=mark,db=dbt3,app=pgxc,client=10.0.3.115 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp7200.0", size 379518976
+2015-10-06 12:15:43 EDT [7200]: [10-1] user=mark,db=dbt3,app=pgxc,client=10.0.3.115 STATEMENT:  
+	CREATE INDEX lineitem_l_orderkey_idx_part1
+	ON lineitem (l_orderkey)
+	WHERE l_commitdate < l_receiptdate;
+2015-10-06 12:15:56 EDT [7196]: [5-1] user=mark,db=dbt3,app=pgxc,client=10.0.3.115 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp7196.2", size 600195072
+2015-10-06 12:15:56 EDT [7196]: [6-1] user=mark,db=dbt3,app=pgxc,client=10.0.3.115 STATEMENT:  
+	CREATE INDEX lineitem_l_orderkey_idx
+	ON lineitem (l_orderkey);
+2015-10-06 12:16:03 EDT [7173]: [1-1] user=mark,db=dbt3,app=pgxc,client=10.0.3.115 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp7173.0", size 840286208
+2015-10-06 12:16:03 EDT [7173]: [2-1] user=mark,db=dbt3,app=pgxc,client=10.0.3.115 STATEMENT:  
+	CREATE INDEX lineitem_l_orderkey_l_linenumber_l_shipdate_idx
+	ON lineitem (l_orderkey, l_linenumber, l_shipdate);
+2015-10-06 12:16:36 EDT [7163]: [37-1] user=,db=,app=,client= LOG:  checkpoint starting: time
+2015-10-06 12:16:45 EDT [7180]: [8-1] user=mark,db=dbt3,app=pgxc,client=10.0.3.115 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp7180.0", size 1073741824
+2015-10-06 12:16:45 EDT [7180]: [9-1] user=mark,db=dbt3,app=pgxc,client=10.0.3.115 STATEMENT:  
+	CREATE INDEX lineitem_l_partkey_l_quantity_l_shipmode_idx
+	ON lineitem (l_partkey, l_quantity, l_shipmode);
+2015-10-06 12:16:45 EDT [7180]: [10-1] user=mark,db=dbt3,app=pgxc,client=10.0.3.115 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp7180.1", size 6619136
+2015-10-06 12:16:45 EDT [7180]: [11-1] user=mark,db=dbt3,app=pgxc,client=10.0.3.115 STATEMENT:  
+	CREATE INDEX lineitem_l_partkey_l_quantity_l_shipmode_idx
+	ON lineitem (l_partkey, l_quantity, l_shipmode);
+2015-10-06 12:17:30 EDT [7160]: [2-1] user=,db=,app=,client= LOG:  received fast shutdown request
+2015-10-06 12:17:30 EDT [7160]: [3-1] user=,db=,app=,client= LOG:  aborting any active transactions
+2015-10-06 12:17:30 EDT [7166]: [2-1] user=,db=,app=,client= LOG:  autovacuum launcher shutting down
+2015-10-06 12:17:31 EDT [7163]: [38-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 4162 buffers (6.4%); 0 transaction log file(s) added, 0 removed, 25 recycled; write=54.625 s, sync=0.705 s, total=55.369 s; sync files=26, longest=0.581 s, average=0.027 s; distance=118119 kB, estimate=381475 kB
+2015-10-06 12:17:31 EDT [7163]: [39-1] user=,db=,app=,client= LOG:  shutting down
+2015-10-06 12:17:31 EDT [7163]: [40-1] user=,db=,app=,client= LOG:  checkpoint starting: shutdown immediate
+2015-10-06 12:17:32 EDT [7163]: [41-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 3816 buffers (5.8%); 0 transaction log file(s) added, 0 removed, 7 recycled; write=0.109 s, sync=0.180 s, total=0.321 s; sync files=16, longest=0.032 s, average=0.011 s; distance=33505 kB, estimate=346678 kB
+2015-10-06 12:17:32 EDT [7163]: [42-1] user=,db=,app=,client= LOG:  database system is shut down

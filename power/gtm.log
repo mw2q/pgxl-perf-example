@@ -1,0 +1,24 @@
+1:140102167967488:2015-10-06 12:17:36.472 EDT -LOG:  Starting GTM server at (*:6666) -- control file /tmp/dbt3/pgdata/gtm/gtm.control
+LOCATION:  main, main.c:626
+1:140102167967488:2015-10-06 12:17:36.472 EDT -LOG:  Restoring last GXID to 11583
+	
+LOCATION:  GTM_RestoreTxnInfo, gtm_txn.c:2740
+1:140102167967488:2015-10-06 12:17:36.472 EDT -LOG:  Started to run as GTM-Active.
+LOCATION:  main, main.c:700
+1:140102134638336:2015-10-06 12:17:36.686 EDT -LOG:  Node with the given ID number already exists - one 0:1
+LOCATION:  pgxcnode_add_info, register_common.c:257
+1:140102134638336:2015-10-06 12:17:36.686 EDT -ERROR:  Failed to Register node
+LOCATION:  ProcessPGXCNodeRegister, register_gtm.c:170
+1:140102143031040:2015-10-06 12:24:59.633 EDT -LOG:  unexpected EOF on client connection
+LOCATION:  ReadCommand, main.c:1481
+1:140102151423744:2015-10-06 12:24:59.633 EDT -LOG:  unexpected EOF on client connection
+LOCATION:  ReadCommand, main.c:1481
+1:140102134638336:2015-10-06 12:25:00.714 EDT -ERROR:  Failed to Unregister node
+LOCATION:  ProcessPGXCNodeUnregister, register_gtm.c:288
+1:140102126245632:2015-10-06 12:25:00.716 EDT -LOG:  unexpected EOF on client connection
+LOCATION:  ReadCommand, main.c:1481
+1:140102117852928:2015-10-06 12:25:00.716 EDT -LOG:  unexpected EOF on client connection
+LOCATION:  ReadCommand, main.c:1481
+1:140102167967488:2015-10-06 12:25:01.719 EDT -LOG:  GTM shutting down.
+LOCATION:  ServerLoop, main.c:884
+Received signal 2

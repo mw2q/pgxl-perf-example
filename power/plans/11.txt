@@ -1,0 +1,68 @@
+BEGIN;
+BEGIN
+EXPLAIN
+select
+	ps_partkey,
+	sum(ps_supplycost * ps_availqty) as value
+from
+	partsupp,
+	supplier,
+	nation
+where
+	ps_suppkey = s_suppkey
+	and s_nationkey = n_nationkey
+	and n_name = 'CHINA'
+group by
+	ps_partkey having
+		sum(ps_supplycost * ps_availqty) > (
+			select
+				sum(ps_supplycost * ps_availqty) * 0.0000100000
+			from
+				partsupp,
+				supplier,
+				nation
+			where
+				ps_suppkey = s_suppkey
+				and s_nationkey = n_nationkey
+				and n_name = 'CHINA'
+		)
+order by
+	value desc;
+                                                                   QUERY PLAN                                                                    
+-------------------------------------------------------------------------------------------------------------------------------------------------
+ Remote Subquery Scan on all (datanode_1_1,datanode_2_1)  (cost=168051.61..168851.64 rows=320012 width=12)
+   ->  Sort  (cost=168051.61..168851.64 rows=320012 width=12)
+         Sort Key: (sum((partsupp.ps_supplycost * (partsupp.ps_availqty)::double precision))) DESC
+         InitPlan 1 (returns $2)
+           ->  Aggregate  (cost=45293.62..45293.64 rows=1 width=8)
+                 ->  Remote Subquery Scan on all (datanode_1_1,datanode_2_1)  (cost=79.35..42893.53 rows=320012 width=8)
+                       ->  Aggregate  (cost=79.35..42893.53 rows=1 width=8)
+                             ->  Nested Loop  (cost=79.35..42893.53 rows=320012 width=8)
+                                   ->  Nested Loop  (cost=79.17..2391.48 rows=4000 width=4)
+                                         ->  Seq Scan on nation nation_1  (cost=0.00..1.31 rows=1 width=4)
+                                               Filter: (n_name = 'CHINA'::bpchar)
+                                         ->  Bitmap Heap Scan on supplier supplier_1  (cost=79.17..2350.17 rows=4000 width=8)
+                                               Recheck Cond: (s_nationkey = nation_1.n_nationkey)
+                                               ->  Bitmap Index Scan on supplier_s_nationkey_s_suppkey_idx  (cost=0.00..78.17 rows=4000 width=0)
+                                                     Index Cond: (s_nationkey = nation_1.n_nationkey)
+                                   ->  Index Scan using partsupp_ps_suppkey_idx on partsupp partsupp_1  (cost=0.18..9.32 rows=81 width=12)
+                                         Index Cond: (ps_suppkey = supplier_1.s_suppkey)
+         ->  GroupAggregate  (cost=77625.56..88025.95 rows=320012 width=12)
+               Group Key: partsupp.ps_partkey
+               Filter: (sum((partsupp.ps_supplycost * (partsupp.ps_availqty)::double precision)) > $2)
+               ->  Sort  (cost=77625.56..78425.59 rows=320012 width=12)
+                     Sort Key: partsupp.ps_partkey
+                     ->  Nested Loop  (cost=79.35..42893.53 rows=320012 width=12)
+                           ->  Nested Loop  (cost=79.17..2391.48 rows=4000 width=4)
+                                 ->  Seq Scan on nation  (cost=0.00..1.31 rows=1 width=4)
+                                       Filter: (n_name = 'CHINA'::bpchar)
+                                 ->  Bitmap Heap Scan on supplier  (cost=79.17..2350.17 rows=4000 width=8)
+                                       Recheck Cond: (s_nationkey = nation.n_nationkey)
+                                       ->  Bitmap Index Scan on supplier_s_nationkey_s_suppkey_idx  (cost=0.00..78.17 rows=4000 width=0)
+                                             Index Cond: (s_nationkey = nation.n_nationkey)
+                           ->  Index Scan using partsupp_ps_suppkey_idx on partsupp  (cost=0.18..9.32 rows=81 width=16)
+                                 Index Cond: (ps_suppkey = supplier.s_suppkey)
+(32 rows)
+
+COMMIT;
+COMMIT

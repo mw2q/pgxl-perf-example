@@ -1,0 +1,156 @@
+No kallsyms or vmlinux with build-id 71beb827b8c31577411d632134fc7db3e382cdf2 was found
+[nf_conntrack] with build id 71beb827b8c31577411d632134fc7db3e382cdf2 not found, continuing without symbols
+No kallsyms or vmlinux with build-id 71beb827b8c31577411d632134fc7db3e382cdf2 was found
+[nf_conntrack] with build id 71beb827b8c31577411d632134fc7db3e382cdf2 not found, continuing without symbols
+No kallsyms or vmlinux with build-id 04b4319c099349681aa57c4e32718ccd0238edea was found
+[nf_conntrack_ipv4] with build id 04b4319c099349681aa57c4e32718ccd0238edea not found, continuing without symbols
+No kallsyms or vmlinux with build-id 71beb827b8c31577411d632134fc7db3e382cdf2 was found
+[nf_conntrack] with build id 71beb827b8c31577411d632134fc7db3e382cdf2 not found, continuing without symbols
+No kallsyms or vmlinux with build-id 04b4319c099349681aa57c4e32718ccd0238edea was found
+[nf_conntrack_ipv4] with build id 04b4319c099349681aa57c4e32718ccd0238edea not found, continuing without symbols
+No kallsyms or vmlinux with build-id 5f59e0a5d172187f08492420b63f604bf78583e0 was found
+[libahci] with build id 5f59e0a5d172187f08492420b63f604bf78583e0 not found, continuing without symbols
+No kallsyms or vmlinux with build-id 55e5b9d2d038ef5b6bf29b145a7c3f48983f4ac5 was found
+[tg3] with build id 55e5b9d2d038ef5b6bf29b145a7c3f48983f4ac5 not found, continuing without symbols
+No kallsyms or vmlinux with build-id 3fc50c07c20f141113cf17c44a9af9ca19a9b433 was found
+[i915] with build id 3fc50c07c20f141113cf17c44a9af9ca19a9b433 not found, continuing without symbols
+No kallsyms or vmlinux with build-id 528434a0d2d226611fd5ea9344f7661d82cbc9e2 was found
+[wl] with build id 528434a0d2d226611fd5ea9344f7661d82cbc9e2 not found, continuing without symbols
+No kallsyms or vmlinux with build-id 643745cb0dd235e8e6cc77f44fc0ae62384b9b6b was found
+[nf_defrag_ipv4] with build id 643745cb0dd235e8e6cc77f44fc0ae62384b9b6b not found, continuing without symbols
+No kallsyms or vmlinux with build-id 074effa02ce8efd964b49fa2ac507411a7a60d3f was found
+[iptable_mangle] with build id 074effa02ce8efd964b49fa2ac507411a7a60d3f not found, continuing without symbols
+No kallsyms or vmlinux with build-id a1c099078cfdae1ae5f9e688c7fbc6a5d8537db0 was found
+[bridge] with build id a1c099078cfdae1ae5f9e688c7fbc6a5d8537db0 not found, continuing without symbols
+No kallsyms or vmlinux with build-id c5cb2cae5e0649756ed8e0aafa4208dc57806d73 was found
+[veth] with build id c5cb2cae5e0649756ed8e0aafa4208dc57806d73 not found, continuing without symbols
+No kallsyms or vmlinux with build-id 1da768abcd06708fd66acbc16879cb9b8b2462b0 was found
+[iptable_nat] with build id 1da768abcd06708fd66acbc16879cb9b8b2462b0 not found, continuing without symbols
+No kallsyms or vmlinux with build-id bd6b11b6a2eb996ab77d445a0fc603d318d7b42e was found
+[ip_tables] with build id bd6b11b6a2eb996ab77d445a0fc603d318d7b42e not found, continuing without symbols
+No kallsyms or vmlinux with build-id b5b620def9e4c579e5b88eab3c96e5b3b240dd8c was found
+[nf_nat] with build id b5b620def9e4c579e5b88eab3c96e5b3b240dd8c not found, continuing without symbols
+No kallsyms or vmlinux with build-id 5f59e0a5d172187f08492420b63f604bf78583e0 was found
+[libahci] with build id 5f59e0a5d172187f08492420b63f604bf78583e0 not found, continuing without symbols
+No kallsyms or vmlinux with build-id 5f59e0a5d172187f08492420b63f604bf78583e0 was found
+[libahci] with build id 5f59e0a5d172187f08492420b63f604bf78583e0 not found, continuing without symbols
+No kallsyms or vmlinux with build-id 04b4319c099349681aa57c4e32718ccd0238edea was found
+[nf_conntrack_ipv4] with build id 04b4319c099349681aa57c4e32718ccd0238edea not found, continuing without symbols
+No kallsyms or vmlinux with build-id 55e5b9d2d038ef5b6bf29b145a7c3f48983f4ac5 was found
+[tg3] with build id 55e5b9d2d038ef5b6bf29b145a7c3f48983f4ac5 not found, continuing without symbols
+No kallsyms or vmlinux with build-id 55e5b9d2d038ef5b6bf29b145a7c3f48983f4ac5 was found
+[tg3] with build id 55e5b9d2d038ef5b6bf29b145a7c3f48983f4ac5 not found, continuing without symbols
+No kallsyms or vmlinux with build-id 3fc50c07c20f141113cf17c44a9af9ca19a9b433 was found
+[i915] with build id 3fc50c07c20f141113cf17c44a9af9ca19a9b433 not found, continuing without symbols
+No kallsyms or vmlinux with build-id 3fc50c07c20f141113cf17c44a9af9ca19a9b433 was found
+[i915] with build id 3fc50c07c20f141113cf17c44a9af9ca19a9b433 not found, continuing without symbols
+No kallsyms or vmlinux with build-id 50ecd72a48417c4e3c82f288a93a2a470523ee3f was found
+[drm] with build id 50ecd72a48417c4e3c82f288a93a2a470523ee3f not found, continuing without symbols
+No kallsyms or vmlinux with build-id 50ecd72a48417c4e3c82f288a93a2a470523ee3f was found
+[drm] with build id 50ecd72a48417c4e3c82f288a93a2a470523ee3f not found, continuing without symbols
+No kallsyms or vmlinux with build-id 50ecd72a48417c4e3c82f288a93a2a470523ee3f was found
+[drm] with build id 50ecd72a48417c4e3c82f288a93a2a470523ee3f not found, continuing without symbols
+No kallsyms or vmlinux with build-id 528434a0d2d226611fd5ea9344f7661d82cbc9e2 was found
+[wl] with build id 528434a0d2d226611fd5ea9344f7661d82cbc9e2 not found, continuing without symbols
+No kallsyms or vmlinux with build-id 528434a0d2d226611fd5ea9344f7661d82cbc9e2 was found
+[wl] with build id 528434a0d2d226611fd5ea9344f7661d82cbc9e2 not found, continuing without symbols
+No kallsyms or vmlinux with build-id abe1fa23b9e33740f02e5eca3acf5a4b922d7d69 was found
+[snd_hda_intel] with build id abe1fa23b9e33740f02e5eca3acf5a4b922d7d69 not found, continuing without symbols
+No kallsyms or vmlinux with build-id 643745cb0dd235e8e6cc77f44fc0ae62384b9b6b was found
+[nf_defrag_ipv4] with build id 643745cb0dd235e8e6cc77f44fc0ae62384b9b6b not found, continuing without symbols
+No kallsyms or vmlinux with build-id 643745cb0dd235e8e6cc77f44fc0ae62384b9b6b was found
+[nf_defrag_ipv4] with build id 643745cb0dd235e8e6cc77f44fc0ae62384b9b6b not found, continuing without symbols
+No kallsyms or vmlinux with build-id 074effa02ce8efd964b49fa2ac507411a7a60d3f was found
+[iptable_mangle] with build id 074effa02ce8efd964b49fa2ac507411a7a60d3f not found, continuing without symbols
+No kallsyms or vmlinux with build-id a1c099078cfdae1ae5f9e688c7fbc6a5d8537db0 was found
+[bridge] with build id a1c099078cfdae1ae5f9e688c7fbc6a5d8537db0 not found, continuing without symbols
+No kallsyms or vmlinux with build-id 074effa02ce8efd964b49fa2ac507411a7a60d3f was found
+[iptable_mangle] with build id 074effa02ce8efd964b49fa2ac507411a7a60d3f not found, continuing without symbols
+No kallsyms or vmlinux with build-id a1c099078cfdae1ae5f9e688c7fbc6a5d8537db0 was found
+[bridge] with build id a1c099078cfdae1ae5f9e688c7fbc6a5d8537db0 not found, continuing without symbols
+No kallsyms or vmlinux with build-id c5cb2cae5e0649756ed8e0aafa4208dc57806d73 was found
+[veth] with build id c5cb2cae5e0649756ed8e0aafa4208dc57806d73 not found, continuing without symbols
+No kallsyms or vmlinux with build-id 1da768abcd06708fd66acbc16879cb9b8b2462b0 was found
+[iptable_nat] with build id 1da768abcd06708fd66acbc16879cb9b8b2462b0 not found, continuing without symbols
+No kallsyms or vmlinux with build-id c5cb2cae5e0649756ed8e0aafa4208dc57806d73 was found
+[veth] with build id c5cb2cae5e0649756ed8e0aafa4208dc57806d73 not found, continuing without symbols
+No kallsyms or vmlinux with build-id 1da768abcd06708fd66acbc16879cb9b8b2462b0 was found
+[iptable_nat] with build id 1da768abcd06708fd66acbc16879cb9b8b2462b0 not found, continuing without symbols
+No kallsyms or vmlinux with build-id bd6b11b6a2eb996ab77d445a0fc603d318d7b42e was found
+[ip_tables] with build id bd6b11b6a2eb996ab77d445a0fc603d318d7b42e not found, continuing without symbols
+No kallsyms or vmlinux with build-id 21e85a526807bbfcd3926820d2bba85e2196d315 was found
+[iptable_filter] with build id 21e85a526807bbfcd3926820d2bba85e2196d315 not found, continuing without symbols
+No kallsyms or vmlinux with build-id ce1f9e2b998bbfa78e1eba5400b16e30cd8fd111 was found
+[ebtables] with build id ce1f9e2b998bbfa78e1eba5400b16e30cd8fd111 not found, continuing without symbols
+No kallsyms or vmlinux with build-id b5b620def9e4c579e5b88eab3c96e5b3b240dd8c was found
+[nf_nat] with build id b5b620def9e4c579e5b88eab3c96e5b3b240dd8c not found, continuing without symbols
+No kallsyms or vmlinux with build-id 2730e06738f0acd484ba0303e3a88b0c63ca975e was found
+[ebtable_filter] with build id 2730e06738f0acd484ba0303e3a88b0c63ca975e not found, continuing without symbols
+No kallsyms or vmlinux with build-id bd6b11b6a2eb996ab77d445a0fc603d318d7b42e was found
+[ip_tables] with build id bd6b11b6a2eb996ab77d445a0fc603d318d7b42e not found, continuing without symbols
+No kallsyms or vmlinux with build-id 21e85a526807bbfcd3926820d2bba85e2196d315 was found
+[iptable_filter] with build id 21e85a526807bbfcd3926820d2bba85e2196d315 not found, continuing without symbols
+No kallsyms or vmlinux with build-id b5b620def9e4c579e5b88eab3c96e5b3b240dd8c was found
+[nf_nat] with build id b5b620def9e4c579e5b88eab3c96e5b3b240dd8c not found, continuing without symbols
+No kallsyms or vmlinux with build-id 2730e06738f0acd484ba0303e3a88b0c63ca975e was found
+[ebtable_filter] with build id 2730e06738f0acd484ba0303e3a88b0c63ca975e not found, continuing without symbols
+No kallsyms or vmlinux with build-id e1a9b319b9d5234ced98da53249d2c826ed7417c was found
+[sunrpc] with build id e1a9b319b9d5234ced98da53249d2c826ed7417c not found, continuing without symbols
+No kallsyms or vmlinux with build-id 21e85a526807bbfcd3926820d2bba85e2196d315 was found
+[iptable_filter] with build id 21e85a526807bbfcd3926820d2bba85e2196d315 not found, continuing without symbols
+No kallsyms or vmlinux with build-id 2730e06738f0acd484ba0303e3a88b0c63ca975e was found
+[ebtable_filter] with build id 2730e06738f0acd484ba0303e3a88b0c63ca975e not found, continuing without symbols
+No kallsyms or vmlinux with build-id ce0da797038076cbc2aa7d20fc02ba95b49ece76 was found
+[xfs] with build id ce0da797038076cbc2aa7d20fc02ba95b49ece76 not found, continuing without symbols
+Failed to open /tmp/perf-0.map, continuing without symbols
+Failed to open [vsyscall], continuing without symbols
+no symbols found in /usr/lib64/sa/sadc, maybe install a debug package?
+Failed to open [usb_storage], continuing without symbols
+No kallsyms or vmlinux with build-id abe1fa23b9e33740f02e5eca3acf5a4b922d7d69 was found
+[snd_hda_intel] with build id abe1fa23b9e33740f02e5eca3acf5a4b922d7d69 not found, continuing without symbols
+Failed to open [snd_hda_controller], continuing without symbols
+Failed to open [snd_pcm], continuing without symbols
+No kallsyms or vmlinux with build-id ce746e1c4ea61f09377bd43b54a1378356e2c88c was found
+[kvm] with build id ce746e1c4ea61f09377bd43b54a1378356e2c88c not found, continuing without symbols
+Failed to open [usb_storage], continuing without symbols
+No kallsyms or vmlinux with build-id abe1fa23b9e33740f02e5eca3acf5a4b922d7d69 was found
+[snd_hda_intel] with build id abe1fa23b9e33740f02e5eca3acf5a4b922d7d69 not found, continuing without symbols
+Failed to open [snd_hda_controller], continuing without symbols
+Failed to open [snd_pcm], continuing without symbols
+Failed to open /lib/x86_64-linux-gnu/ld-2.21.so, continuing without symbols
+No kallsyms or vmlinux with build-id ce1f9e2b998bbfa78e1eba5400b16e30cd8fd111 was found
+[ebtables] with build id ce1f9e2b998bbfa78e1eba5400b16e30cd8fd111 not found, continuing without symbols
+No kallsyms or vmlinux with build-id ce1f9e2b998bbfa78e1eba5400b16e30cd8fd111 was found
+[ebtables] with build id ce1f9e2b998bbfa78e1eba5400b16e30cd8fd111 not found, continuing without symbols
+Failed to open [vsyscall], continuing without symbols
+No kallsyms or vmlinux with build-id e1a9b319b9d5234ced98da53249d2c826ed7417c was found
+[sunrpc] with build id e1a9b319b9d5234ced98da53249d2c826ed7417c not found, continuing without symbols
+Can't annotate copy_user_enhanced_fast_string:
+
+No vmlinux file with build id 146834bb03063b4db12957d520d22d1c2029479f
+was found in the path.
+
+Please use:
+
+  perf buildid-cache -vu vmlinux
+
+or:
+
+  --vmlinux vmlinux
+Failed to open [vsyscall], continuing without symbols
+No kallsyms or vmlinux with build-id e1a9b319b9d5234ced98da53249d2c826ed7417c was found
+[sunrpc] with build id e1a9b319b9d5234ced98da53249d2c826ed7417c not found, continuing without symbols
+No kallsyms or vmlinux with build-id ce0da797038076cbc2aa7d20fc02ba95b49ece76 was found
+[xfs] with build id ce0da797038076cbc2aa7d20fc02ba95b49ece76 not found, continuing without symbols
+Failed to open /tmp/perf-0.map, continuing without symbols
+No kallsyms or vmlinux with build-id ce0da797038076cbc2aa7d20fc02ba95b49ece76 was found
+[xfs] with build id ce0da797038076cbc2aa7d20fc02ba95b49ece76 not found, continuing without symbols
+no symbols found in /usr/lib64/sa/sadc, maybe install a debug package?
+No kallsyms or vmlinux with build-id ce746e1c4ea61f09377bd43b54a1378356e2c88c was found
+[kvm] with build id ce746e1c4ea61f09377bd43b54a1378356e2c88c not found, continuing without symbols
+Failed to open /tmp/perf-0.map, continuing without symbols
+Failed to open /lib/x86_64-linux-gnu/ld-2.21.so, continuing without symbols
+no symbols found in /usr/lib64/sa/sadc, maybe install a debug package?
+No kallsyms or vmlinux with build-id ce746e1c4ea61f09377bd43b54a1378356e2c88c was found
+[kvm] with build id ce746e1c4ea61f09377bd43b54a1378356e2c88c not found, continuing without symbols
+Failed to open /lib/x86_64-linux-gnu/ld-2.21.so, continuing without symbols

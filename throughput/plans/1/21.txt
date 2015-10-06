@@ -1,0 +1,83 @@
+BEGIN;
+BEGIN
+EXPLAIN
+select
+	s_name,
+	count(*) as numwait
+from
+	supplier,
+	lineitem l1,
+	orders,
+	nation
+where
+	s_suppkey = l1.l_suppkey
+	and o_orderkey = l1.l_orderkey
+	and o_orderstatus = 'F'
+	and l1.l_receiptdate > l1.l_commitdate
+	and exists (
+		select
+			*
+		from
+			lineitem l2
+		where
+			l2.l_orderkey = l1.l_orderkey
+			and l2.l_suppkey <> l1.l_suppkey
+	)
+	and not exists (
+		select
+			*
+		from
+			lineitem l3
+		where
+			l3.l_orderkey = l1.l_orderkey
+			and l3.l_suppkey <> l1.l_suppkey
+			and l3.l_receiptdate > l3.l_commitdate
+	)
+	and s_nationkey = n_nationkey
+	and n_name = 'CANADA'
+group by
+	s_name
+order by
+	numwait desc,
+	s_name
+LIMIT 100;
+                                                                              QUERY PLAN                                                                               
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Limit  (cost=4304364.11..4304364.11 rows=1 width=26)
+   ->  Sort  (cost=4304364.11..4304364.11 rows=1 width=26)
+         Sort Key: (pg_catalog.count(*)) DESC, supplier.s_name
+         ->  HashAggregate  (cost=4304364.09..4304364.10 rows=1 width=26)
+               Group Key: supplier.s_name
+               ->  Remote Subquery Scan on all (datanode_1_1,datanode_2_1)  (cost=2656878.01..4304364.08 rows=1 width=26)
+                     ->  HashAggregate  (cost=2656878.01..4304364.08 rows=1 width=26)
+                           Group Key: supplier.s_name
+                           ->  Nested Loop Anti Join  (cost=2656878.01..4304364.08 rows=1 width=26)
+                                 ->  Nested Loop  (cost=2656877.89..4304121.63 rows=1 width=34)
+                                       ->  Hash Semi Join  (cost=2656877.70..4304114.61 rows=1 width=38)
+                                             Hash Cond: (l1.l_orderkey = l2.l_orderkey)
+                                             Join Filter: (l2.l_suppkey <> l1.l_suppkey)
+                                             ->  Hash Join  (cost=7444.45..1405781.65 rows=798748 width=34)
+                                                   Hash Cond: (l1.l_suppkey = supplier.s_suppkey)
+                                                   ->  Bitmap Heap Scan on lineitem l1  (cost=5002.97..1320370.06 rows=19995367 width=8)
+                                                         Recheck Cond: (l_commitdate < l_receiptdate)
+                                                         ->  Bitmap Index Scan on lineitem_l_orderkey_idx_part1  (cost=0.00..4.13 rows=19995367 width=0)
+                                                   ->  Hash  (cost=2391.48..2391.48 rows=4000 width=30)
+                                                         ->  Nested Loop  (cost=79.17..2391.48 rows=4000 width=30)
+                                                               ->  Seq Scan on nation  (cost=0.00..1.31 rows=1 width=4)
+                                                                     Filter: (n_name = 'CANADA'::bpchar)
+                                                               ->  Bitmap Heap Scan on supplier  (cost=79.17..2350.17 rows=4000 width=34)
+                                                                     Recheck Cond: (s_nationkey = nation.n_nationkey)
+                                                                     ->  Bitmap Index Scan on supplier_s_nationkey_s_suppkey_idx  (cost=0.00..78.17 rows=4000 width=0)
+                                                                           Index Cond: (s_nationkey = nation.n_nationkey)
+                                             ->  Hash  (cost=1665286.00..1665286.00 rows=59986100 width=8)
+                                                   ->  Seq Scan on lineitem l2  (cost=0.00..1665286.00 rows=59986100 width=8)
+                                       ->  Index Scan using orders_o_orderkey_o_orderdate_idx on orders  (cost=0.18..7.00 rows=1 width=4)
+                                             Index Cond: (o_orderkey = l1.l_orderkey)
+                                             Filter: (o_orderstatus = 'F'::bpchar)
+                                 ->  Index Scan using lineitem_l_orderkey_idx_part1 on lineitem l3  (cost=0.12..121.06 rows=46 width=8)
+                                       Index Cond: (l_orderkey = l1.l_orderkey)
+                                       Filter: (l_suppkey <> l1.l_suppkey)
+(34 rows)
+
+COMMIT;
+COMMIT

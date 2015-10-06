@@ -1,0 +1,82 @@
+BEGIN;
+BEGIN
+EXPLAIN
+select
+	supp_nation,
+	cust_nation,
+	l_year,
+	sum(volume) as revenue
+from
+	(
+		select
+			n1.n_name as supp_nation,
+			n2.n_name as cust_nation,
+			extract(year from l_shipdate) as l_year,
+			l_extendedprice * (1 - l_discount) as volume
+		from
+			supplier,
+			lineitem,
+			orders,
+			customer,
+			nation n1,
+			nation n2
+		where
+			s_suppkey = l_suppkey
+			and o_orderkey = l_orderkey
+			and c_custkey = o_custkey
+			and s_nationkey = n1.n_nationkey
+			and c_nationkey = n2.n_nationkey
+			and (
+				(n1.n_name = 'CANADA' and n2.n_name = 'INDIA')
+				or (n1.n_name = 'INDIA' and n2.n_name = 'CANADA')
+			)
+			and l_shipdate between date '1995-01-01' and date '1996-12-31'
+	) as shipping
+group by
+	supp_nation,
+	cust_nation,
+	l_year
+order by
+	supp_nation,
+	cust_nation,
+	l_year;
+                                                                                    QUERY PLAN                                                                                     
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Sort  (cost=2366960.43..2366968.10 rows=3067 width=64)
+   Sort Key: n1.n_name, n2.n_name, (date_part('year'::text, (lineitem.l_shipdate)::timestamp without time zone))
+   ->  HashAggregate  (cost=2366736.80..2366782.81 rows=3067 width=64)
+         Group Key: n1.n_name, n2.n_name, date_part('year'::text, (lineitem.l_shipdate)::timestamp without time zone)
+         ->  Remote Subquery Scan on all (datanode_1_1,datanode_2_1)  (cost=935722.48..2365891.33 rows=56365 width=64)
+               ->  HashAggregate  (cost=935722.48..2365891.33 rows=3067 width=64)
+                     Group Key: n1.n_name, n2.n_name, date_part('year'::text, (lineitem.l_shipdate)::timestamp without time zone)
+                     ->  Hash Join  (cost=935722.48..2365891.33 rows=56365 width=64)
+                           Hash Cond: (lineitem.l_suppkey = supplier.s_suppkey)
+                           Join Filter: (((n1.n_name = 'CANADA'::bpchar) AND (n2.n_name = 'INDIA'::bpchar)) OR ((n1.n_name = 'INDIA'::bpchar) AND (n2.n_name = 'CANADA'::bpchar)))
+                           ->  Hash Join  (cost=931987.08..2354621.20 rows=1356224 width=42)
+                                 Hash Cond: (lineitem.l_orderkey = orders.o_orderkey)
+                                 ->  Bitmap Heap Scan on lineitem  (cost=388884.49..1729227.00 rows=18327834 width=20)
+                                       Recheck Cond: ((l_shipdate >= '1995-01-01'::date) AND (l_shipdate <= '1996-12-31'::date))
+                                       ->  Bitmap Index Scan on lineitem_l_shipdate_l_suppkey__idx  (cost=0.00..384302.53 rows=18327834 width=0)
+                                             Index Cond: ((l_shipdate >= '1995-01-01'::date) AND (l_shipdate <= '1996-12-31'::date))
+                                 ->  Hash  (cost=529227.96..529227.96 rows=1109970 width=30)
+                                       ->  Hash Join  (cost=58603.40..529227.96 rows=1109970 width=30)
+                                             Hash Cond: (orders.o_custkey = customer.c_custkey)
+                                             ->  Seq Scan on orders  (cost=0.00..403274.90 rows=14999990 width=8)
+                                             ->  Hash  (cost=57103.40..57103.40 rows=120000 width=30)
+                                                   ->  Hash Join  (cost=1.40..57103.40 rows=120000 width=30)
+                                                         Hash Cond: (customer.c_nationkey = n2.n_nationkey)
+                                                         ->  Seq Scan on customer  (cost=0.00..50277.00 rows=1500000 width=8)
+                                                         ->  Hash  (cost=1.38..1.38 rows=2 width=30)
+                                                               ->  Seq Scan on nation n2  (cost=0.00..1.38 rows=2 width=30)
+                                                                     Filter: ((n_name = 'INDIA'::bpchar) OR (n_name = 'CANADA'::bpchar))
+                           ->  Hash  (cost=3635.40..3635.40 rows=8000 width=30)
+                                 ->  Hash Join  (cost=1.40..3635.40 rows=8000 width=30)
+                                       Hash Cond: (supplier.s_nationkey = n1.n_nationkey)
+                                       ->  Seq Scan on supplier  (cost=0.00..3179.00 rows=100000 width=8)
+                                       ->  Hash  (cost=1.38..1.38 rows=2 width=30)
+                                             ->  Seq Scan on nation n1  (cost=0.00..1.38 rows=2 width=30)
+                                                   Filter: ((n_name = 'CANADA'::bpchar) OR (n_name = 'INDIA'::bpchar))
+(34 rows)
+
+COMMIT;
+COMMIT
